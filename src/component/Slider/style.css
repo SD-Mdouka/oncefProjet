@@ -26,14 +26,27 @@
     -webkit-box-pack: center;
     justify-content: center !important;
     border-radius: 25px !important;
-    width: 66% !important;
+    width: 60% !important;
     height: 91% !important;
     padding-bottom: 20px !important;
     top: 20px !important;
-    margin: auto 250px !important;
-    background-size: contain !important;
+    margin: auto 300px !important;
+    background-size: cover !important;
     -webkit-border-radius: 25px !important;
     -moz-border-radius: 25px !important;
     -ms-border-radius: 25px !important;
     -o-border-radius: 25px !important;
+}
+.slider-wrapper div button img{
+    background-color: blue;
+    border-radius: 50%;
+}
+.slider-wrapper div {
+    background: #f17985;
+    color: aqua;
+}
+@media screen and (max-width: 766px) {
+    .slider-wrapper div button img{
+       margin: 0px;
+    }
 }
