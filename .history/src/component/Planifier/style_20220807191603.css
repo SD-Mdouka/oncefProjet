@@ -1,0 +1,70 @@
+.filpImage {
+    padding: 50px 0px;
+    background: linear-gradient(rgb(246, 252, 253) 0%, rgb(244, 243, 255) 100%);
+}
+
+.containerFilp {
+    width: 1110px;
+    height: 590px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.flipeOne {
+    width: 730px;
+    height: 480px;
+    border-radius: 24px 0px 0px 24px;
+    padding: 121px 250px 112px 95px;
+    background-color: rgb(239, 46, 66);
+}
+
+.flipeTow {
+    height: 470px;
+    width: 540px;
+    border-radius: 24px 24px 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 4%) 0px 12px 84px 0px;
+    padding: 130px 95px 95px;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    z-index: 1;
+}
+
+.flipeVisible {
+    position: absolute;
+    top: 30px;
+    right: 272px;
+    width: 108px;
+    height: 99px;
+}
+
+.titleFilp {
+    color: rgb(255, 255, 255);
+    font-family: "Encode Sans Expanded";
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+    line-height: 37px;
+}
+
+.btnSpace {
+    padding-top: 40px;
+}
+
+.btnDecouvrir {
+    border-radius: 100px;
+    text-decoration: none;
+    font-family: "Encode Sans Expanded";
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15.5px 35.5px;
+    margin: 25px 0px 0px;
+    display: flex;
+    width: fit-content;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out 0s;
+    border: 1.6px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
+}

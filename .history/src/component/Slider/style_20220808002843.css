@@ -1,0 +1,6 @@
+.slider-wrapper {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    transition: height 0.15s ease-in;
+}

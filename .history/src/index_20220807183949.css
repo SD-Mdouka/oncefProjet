@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    font-family: "EncodeSansExpanded Regular", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: "EncodeSansExpanded Regular", sans-serif;
+}
+
+.ant-layout-content {
+    -ms-flex: auto;
+    flex: auto;
+    min-height: 0;
+}
+
+.b_homeBanner {
+    position: relative;
+    height: auto;
+    background: #ef2e41;
+    padding: 40px 0 130px;
+}
+
+.ant-col {
+    position: relative;
+    min-height: 1px;
+}

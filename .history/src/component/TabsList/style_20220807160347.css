@@ -1,0 +1,50 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tabsList {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0px 80px;
+    margin-bottom: -1px;
+}
+
+.tabsList>button::before,
+.tabsList>button::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    left: -11px;
+    bottom: 0px;
+    background: url("https://www.oncf-voyages.ma/static/media/coin.bbbe2fe1.svg") no-repeat;
+    position: absolute;
+}
+
+.tabsPage {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    width: 100%;
+    z-index: 3;
+    padding: 20px 35px;
+}
+
+.stylePage {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tabTitel {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+
+.icon {
+    display: flex;
+}

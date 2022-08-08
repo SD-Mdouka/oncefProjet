@@ -1,0 +1,36 @@
+.slider-wrapper {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    transition: height 0.15s ease-in;
+}
+
+.img {
+    border-radius: 25px;
+    width: 98% !important;
+    height: 450px !important;
+}
+
+.rsis-container {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    transition: height 0.15s ease-in;
+}
+
+.rsis-container div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100% !important;
+    height: 100% !important;
+    margin: auto 100px;
+    background-size: contain !important;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
