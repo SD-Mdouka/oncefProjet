@@ -1,0 +1,67 @@
+#infotrafic .bg-img {
+    width: 1110px;
+    margin: -315px auto 0px;
+    height: 480px;
+    background-image: url(https://www.oncf-voyages.ma/media/static/fr/images/visuel-info-trafic-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 50px 95px 0px 0px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#infotrafic .imgLeft {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#infotrafic .imgContainer {
+    margin-bottom: 10px;
+}
+
+#infotrafic .imgTitle {
+    color: rgb(47, 5, 131);
+    font-family: "Encode Sans Expanded";
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 0.08px;
+    line-height: 22px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#infotrafic .paragraph {
+    width: 460px;
+    color: rgb(36, 0, 113);
+    font-family: "Encode Sans Expanded";
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 0.17px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#infotrafic .imgTElecharge {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#infotrafic .imgTElecharge a {
+    margin: 35px 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    max-width: 47%;
+}
+
+#infotrafic .imgTElecharge img {
+    width: 136px;
+}
