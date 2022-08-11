@@ -1,0 +1,24 @@
+.vente-navbar-container {
+    width: 100%;
+    position: static;
+    height: 120px;
+}
+
+#Menu .menuList {
+    background: #6a0dad;
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 11;
+}
+
+#Menu .IconMenu {
+    display: flex;
+    height: 120px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 81;
+    position: relative;
+}
