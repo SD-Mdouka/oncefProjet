@@ -1,0 +1,199 @@
+.content {
+    margin: 50px 0px;
+    position: relative;
+    padding-bottom: 400px;
+    background-color: rgb(74, 32, 170);
+}
+
+.imgRight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://www.oncf-voyages.ma/static/media/cercle.21d3ee34.svg"), url("https://www.oncf-voyages.ma/static/media/cercle.21d3ee34.svg");
+    background-size: 301px 301px, 476px 476px;
+    background-position: -181px 330px, calc(100% + 253px) 0px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.imgLeft {
+    height: 188px;
+    width: 100%;
+    background: rgb(244, 243, 255);
+    position: relative;
+    top: -1px;
+}
+
+.imgLContent {
+    clip-path: ellipse(55% 301px at 50% 301px);
+    height: 101%;
+    width: 100%;
+    background-color: rgb(74, 32, 170);
+}
+
+.Title {
+    color: rgb(255, 255, 255);
+    font-family: "Encode Sans Expanded";
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    line-height: 43px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+
+/*drop items*/
+
+
+/*
+ * Settings
+ */
+
+body {
+    color: #777;
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+
+/*
+ * 1. So dropdown child is correct width.
+ * 2. To allow dropdown to be positioned absolutely 
+ */
+
+.c-dropdown-select {
+    display: inline-block;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+
+/*
+ * 1. To position caret icon
+ * 2. Button default is to center text
+ * 3. Truncate For long labels
+ */
+
+.c-dropdown-select__trigger {
+    cursor: pointer;
+    display: block;
+    font-size: inherit;
+    line-height: 1;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.c-dropdown-select__trigger::after {
+    border: 0.5rem solid transparent;
+    border-top-color: #777;
+    content: "";
+    margin-top: -0.125rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+}
+
+.c-dropdown-select__trigger:focus {
+    border-color: #0288d1;
+    outline: 0;
+}
+
+
+/*
+     * The caret icon
+     */
+
+.c-dropdown-select__trigger-inner {
+    align-items: center;
+    display: flex;
+}
+
+.c-dropdown-select__trigger,
+.c-dropdown-select__dropdown {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 13rem;
+}
+
+.c-dropdown-select__dropdown {
+    left: 0;
+    margin-top: 0.125rem;
+    max-width: 15rem;
+    position: absolute;
+    top: 100%;
+}
+
+
+/*
+ * 1. To align bullet and text
+ */
+
+.c-dropdown-select__option {
+    align-items: baseline;
+    cursor: pointer;
+    display: flex;
+    line-height: 1.4;
+    padding: 0.5rem 0.75rem;
+}
+
+.c-dropdown-select__option.is-active,
+.c-dropdown-select__option:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*
+ * 1. Takes up remaining space
+ * 2. Allow pointer events to pass through
+ */
+
+.c-dropdown-select__option-text {
+    flex: 1;
+    margin-left: 1rem-x-small;
+    pointer-events: none;
+}
+
+
+/*
+ * The circle icon
+ */
+
+
+/*
+ * 1. Makes a perfect circle when height and width are set.
+ */
+
+.c-status-icon {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.c-status-icon--red {
+    background-color: #c62828;
+}
+
+.c-status-icon--orange {
+    background-color: #f4511e;
+}
+
+.c-status-icon--green {
+    background-color: #388e3c;
+}
+
+.c-status-icon--blue {
+    background-color: #0288d1;
+}

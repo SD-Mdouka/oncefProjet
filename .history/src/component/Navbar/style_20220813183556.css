@@ -1,0 +1,221 @@
+.vente-navbar-container {
+    width: 100%;
+    position: static;
+    height: 120px;
+}
+
+#Menu .menuList {
+    background: #6a0dad;
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 11;
+}
+
+#Menu .IconMenu {
+    display: flex;
+    height: 120px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 81;
+    position: relative;
+}
+
+#Menu .app-header-container {
+    padding-bottom: 0 !important;
+    margin: 0px auto;
+    width: 80%;
+}
+
+#Menu .iconFirst {
+    display: flex;
+}
+
+#Menu .groupIcon {
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+    cursor: pointer;
+}
+
+#Menu .icon {
+    overflow: hidden;
+}
+
+#Menu .title {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+}
+
+#Menu .encfGroup {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#Menu .iconLeft {
+    display: flex;
+}
+
+#Menu .UserIcon {
+    font-family: "EncodeSansExpanded Medium", sans-serif;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #fff;
+    padding: 0;
+}
+
+#Menu .user_login_icon {
+    border-right: 1px solid rgba(255, 255, 255, 0.58);
+    padding: 0px 30px;
+}
+
+#Menu .user {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#Menu .lastChild:last-child {
+    border-right: none;
+    padding-right: 0px;
+}
+
+#Menu .panierShop {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/*Menu style slide*/
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #fff;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #fff;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-item-list {
+    padding: 0.5em;
+}
+
+.bm-item {
+    display: block;
+    color: #bdc3c7;
+}
+
+
+/*toogle items*/
+
+
+/* style the component container */
+
+.accordion_container {
+    padding-left: 20px;
+    margin-top: 20px;
+    width: 290px;
+    background-color: #37065a;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+
+/* style the title button of the accordion menu */
+
+.accordion_title {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #37065a;
+}
+
+.accordion_content {
+    height: 0px;
+    transition: height 0.3s ease-in;
+}
+
+
+/*  
+The .show_content class is added and removed from the accordion_content div in the JSX to achieve the show and hide effect for the content when the accordion is clicked.
+*/
+
+.show_content {
+    height: 250px;
+    opacity: 1;
+    visibility: visible;
+    transition: height 0.3s ease-out;
+}
+
+
+/* Style the list item container divs */
+
+.list_item_container {
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+
+/* Style the first lit item top border, makes the title look encloses without overlapping borders when the accordion is closed */
+
+.accordion_content .list_item_container:first-of-type {
+    border-top: 3px solid black;
+}
+
+
+/* Style the list items p text */
+
+.list_item_container p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* Style list_item text when list_item_container is hovered */
+
+.list_item_container:hover>p {
+    color: #fff;
+}

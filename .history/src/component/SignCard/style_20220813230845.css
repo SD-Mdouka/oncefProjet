@@ -1,0 +1,174 @@
+.AuthPopover {
+    background-color: #4a20aa !important;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.ant-card {
+    width: max-content;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    padding: 20px;
+    margin-top: 400px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum", "tnum";
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+}
+
+.AuthPopover .ant-card-head {
+    border-bottom-color: rgba(189, 167, 239, 0.2);
+}
+
+.ant-card-head {
+    min-height: 48px;
+    margin-bottom: -1px;
+    padding: 0 24px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 2px 2px 0 0;
+    zoom: 1;
+}
+
+.ant-card-head-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ant-card-head-title {
+    display: inline-block;
+    -ms-flex: 1;
+    flex: 1 1;
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.AuthPopover_title {
+    color: #fff;
+    font-family: "EncodeSansExpanded SemiBold", sans-serif;
+}
+
+.ant-card-body {
+    padding: 24px;
+    zoom: 1;
+}
+
+.ant-card-body:after,
+.ant-card-body:before {
+    display: table;
+    content: "";
+}
+
+.ant-popover .SignInForm {
+    border: none;
+    background-color: initial;
+}
+
+.ant-popover .SignInForm_label {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.SignInForm_input {
+    display: block;
+    margin: 15px 0 0;
+}
+
+.InputWrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.9375rem;
+}
+
+.ant-popover .SignInForm_input .ant-input {
+    padding: 10px 20px;
+    border-color: #fff;
+}
+
+.ant-input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+.ant-popover .SignInForm_pswForgotten {
+    display: block;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.ant-popover .SignInForm_pswForgotten a {
+    font-size: 0.75rem;
+}
+
+.CustomLink--default {
+    color: #bda7ef;
+    position: relative;
+    display: inline-block;
+}
+
+.CustomLink--default:before,
+.CustomLink--secondary:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: initial;
+    bottom: 0;
+    left: 0;
+    top: unset;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.ant-popover .SignInForm_ctaSignIn {
+    background-color: #00e1a1;
+}
+
+.ant-popover .SignInForm_ctaSignIn span {
+    font-size: 0.875rem;
+}
+
+.AuthPopover_link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.CustomLink--secondary {
+    color: #00e1a1;
+    position: relative;
+    display: inline-block;
+}
+
+.ant-card-body:after {
+    clear: both;
+}
+
+.ant-card-body:after,
+.ant-card-body:before {
+    display: table;
+    content: "";
+}
