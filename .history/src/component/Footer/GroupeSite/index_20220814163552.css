@@ -1,0 +1,42 @@
+#lsitFooter .OncfVoyages {
+    width: 255px;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+#lsitFooter .titel {
+    color: rgb(48, 8, 126);
+    font-family: "Encode Sans Expanded";
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#lsitFooter .listoncf {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#lsitFooter .lienoncf {
+    color: rgb(48, 8, 126);
+    font-family: "Encode Sans Expanded";
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px;
+}
+
+#lsitFooter .list {
+    margin-top: 64px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px 171px;
+}
