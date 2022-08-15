@@ -94,7 +94,7 @@
 
 /*Menu style slide*/
 
-.bm-burger-button {
+#Menu .bm-burger-button {
     position: absolute;
     width: 36px;
     height: 30px;
@@ -102,30 +102,30 @@
     top: 36px;
 }
 
-.bm-burger-bars {
+#Menu .bm-burger-bars {
     background: #fff;
 }
 
-.bm-cross-button {
+#Menu .bm-cross-button {
     height: 24px;
     width: 24px;
 }
 
-.bm-cross {
+#Menu .bm-cross {
     background: #fff;
 }
 
-.bm-menu {
+#Menu .bm-menu {
     background: #373a50;
     padding: 1.5em 0;
     font-size: 1.15em;
 }
 
-.bm-item-list {
+#Menu .bm-item-list {
     padding: 0.5em;
 }
 
-.bm-item {
+#Menu .bm-item {
     display: block;
     color: #bdc3c7;
 }
@@ -136,19 +136,19 @@
 
 /* style the component container */
 
-.accordion_container {
+#MenuContent .accordion_container {
     padding-left: 20px;
     margin-top: 20px;
     margin-left: -10px;
     width: 290px;
-    background-color: #37065a;
+    background-color: transparent;
     overflow: hidden;
 }
 
 
 /* style the title button of the accordion menu */
 
-.accordion_title {
+#MenuContent .accordion_title {
     width: 100%;
     height: 50px;
     border: none;
@@ -160,10 +160,10 @@
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #37065a;
+    background-color: transparent;
 }
 
-.accordion_content {
+#MenuContent .accordion_content {
     height: 0px;
     transition: height 0.3s ease-in;
     -webkit-transition: height 0.3s ease-in;
@@ -177,7 +177,7 @@
 The .show_content class is added and removed from the accordion_content div in the JSX to achieve the show and hide effect for the content when the accordion is clicked.
 */
 
-#content .show_content {
+#MenuContent .show_content {
     height: 190px;
     opacity: 1;
     visibility: visible;
@@ -191,7 +191,7 @@ The .show_content class is added and removed from the accordion_content div in t
 
 /* Style the list item container divs */
 
-.list_item_container {
+#MenuContent .list_item_container {
     width: 100%;
     height: 50px;
     padding-left: 15px;
@@ -201,73 +201,3 @@ The .show_content class is added and removed from the accordion_content div in t
 }
 
 
-/* Style the list items p text */
-
-.iIUvbp:hover div {
-    color: #40a9ff;
-}
-
-.iIUvbp {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    margin: 26px 0px;
-    cursor: pointer;
-    border: none;
-}
-
-.frzQon {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-shrink: 1;
-    padding-right: 10px;
-}
-
-.bjlyHF {
-    display: flex;
-    flex-shrink: 0;
-}
-
-.ggVxCV {
-    margin-right: 9px;
-    margin-top: 3px;
-}
-
-.eZckQM {
-    color: rgb(255, 255, 255);
-    font-family: "Encode Sans Expanded";
-    font-size: 15px;
-    letter-spacing: 0.07px;
-    line-height: 18px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -ms-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-}
-
-.jOMxiX {
-    color: rgb(255, 255, 255);
-    font-family: "Encode Sans Expanded";
-    font-size: 12px;
-    letter-spacing: 0.1px;
-    line-height: 15px;
-    margin-right: 8px;
-    margin-top: 7px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -ms-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-}
-
-.hUjbuY {
-    color: rgb(255, 255, 255);
-    font-family: "Encode Sans Expanded";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.09px;
-    line-height: 25px;
-    transition: all 0.2s ease-in-out 0s;
-}
