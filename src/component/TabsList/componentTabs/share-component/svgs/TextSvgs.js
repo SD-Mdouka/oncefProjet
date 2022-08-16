@@ -1,8 +1,8 @@
 import React from 'react';
 
-function TextSvgs() {
+function TextSvgs({ height }) {
   return (
-    <svg width='24' height='24' viewBox='0 0 29 29' version='1.1'>
+    <svg width={height} height={height} viewBox='0 0 29 29' version='1.1'>
       <title></title>
       <desc>Created with sketchtool.</desc>
       <g

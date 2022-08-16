@@ -6,7 +6,7 @@
     border-radius: 15px;
     overflow: hidden;
 }
-
+/* forme reservation  */
 .searchForm {
     padding: 0;
     margin-bottom: 12px;
@@ -42,9 +42,9 @@
 
 .textStyle {
     font-size: 14px;
-    padding: 6px 0;
+    padding: 10px 0;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: -5px;
     color: #4a20aa !important;
 }
 
@@ -140,7 +140,7 @@
     font-weight: bold;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 6px 36px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
@@ -148,6 +148,69 @@
 }
 
 .iconSvge {
-    width: 20px;
+    width: 25px;
     margin-top: 2px;
+    margin-left: -30px;
+}
+
+/* forme resever card */
+
+#ReserveCard .AdvancedSearchWidget_auth--conventionne {
+    padding: 20px 0px 10px;
+    background-color: rgb(255, 255, 255);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-radius: 0px;
+    margin: 10px 0px;
+}
+#ReserveCard .ant-row {
+    position: relative;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    zoom: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#ReserveCard .btn-search {
+    position: relative;
+    right: 0px;
+    bottom: 5px;
+   
+}
+#ReserveCard .searchForm_footer {
+    height: 176px;
+    display: flex;
+    position: relative;
+    border-top: none;
+    margin-top: 0.9375rem;
+    padding-top: 0.9375rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    right: -80%;
+    width: 20%;
+    border-top: 1px solid rgb(244, 242, 249);
+   
+}
+#ReserveCard .btnRechercheIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border-radius: 28px !important;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding: 6px 100px !important;
+    height: auto !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }

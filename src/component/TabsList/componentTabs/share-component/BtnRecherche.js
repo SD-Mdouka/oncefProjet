@@ -1,13 +1,13 @@
-import React from "react";
-import TextSvgs from "../share-component/svgs/TextSvgs";
+import React from 'react';
+import TextSvgs from '../share-component/svgs/TextSvgs';
 
-export const BtnRecherche = () => {
+export const BtnRecherche = ({ classStyle, text = 'Recherche', classIcon }) => {
   return (
-    <a className="btnRecherche filled primary medium false button">
-      <div className="iconSvge">
-        <TextSvgs />
+    <a className={classStyle}>
+      <div className={'iconSvge'}>
+        <TextSvgs height={classIcon} />
       </div>
-      <span className="ml-[40px] w-full">Recherche</span>
+      <span className='ml-[40px] w-full'>{text}</span>
     </a>
   );
 };
