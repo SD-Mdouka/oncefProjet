@@ -1,0 +1,180 @@
+{
+    "cardReduit" : [
+       {
+        "cardId": 1,
+        "nameCard" : "10ZEN AL BORAQ 1CL"
+       },
+       {
+        "cardId": 2,
+        "nameCard" : "10ZEN AL BORAQ 2CL"
+       },
+       {
+        "cardId": 3,
+        "nameCard" : "10ZEN TC 1CL"
+       },
+       {
+        "cardId": 4,
+        "nameCard" : "10ZEN TC 2CL"
+       },
+       {
+        "cardId": 5,
+        "nameCard" : " AOS ANAPEC"
+       },
+       {
+        "cardId": 6,
+        "nameCard" : " AOS CNOPS"
+       },
+       {
+        "cardId": 7,
+        "nameCard" : "AOS FONCTIONNAIRES DE LA CHAMBRE DES REPRSENTANTS"
+       },
+       {
+        "cardId": 8,
+        "nameCard" : "AOS JURIDICTIONS FINANCI"
+       },
+       {
+        "cardId": 9,
+        "nameCard" : "AOS MINISTRE INDUSTRIE ET COMMERCE"
+       },
+       {
+        "cardId": 10,
+        "nameCard" : "AOS ONICL"
+       },
+       {
+        "cardId": 11,
+        "nameCard" : " ABONNEMENT 1CL"
+       },
+       {
+        "cardId": 12,
+        "nameCard" : "ABONNEMENT 2CL"
+       },
+       {
+        "cardId": 13,
+        "nameCard" : " AL BORAQ DIMA 1CL"
+       },
+       {
+        "cardId": 14,
+        "nameCard" : "AL BORAQ DIMA 2CL"
+       }, 
+       {
+        "cardId": 15,
+        "nameCard" : "AL BORAQ FIFTY 1CL"
+       },
+       {
+        "cardId": 16,
+        "nameCard" : "AL BORAQ FIFTY 2CL"
+       },
+       {
+        "cardId": 17,
+        "nameCard" : "ARTISTE"
+       },
+       {
+        "cardId": 18,
+        "nameCard" : "ASSOCIATION DOUANIRE MAROCAINE"
+       },
+       {
+        "cardId": 19,
+        "nameCard" : "ATTALIB"
+       },
+       {
+        "cardId": 20,
+        "nameCard" : "CONSEILLERS"
+       },
+       {
+        "cardId": 21,
+        "nameCard" : "FH2OSAMAC 50%"
+       },
+       {
+        "cardId": 22,
+        "nameCard" : "FH2OSAMAC 75%"
+       },
+       {
+        "cardId": 23,
+        "nameCard" : "FMVIPOSEF"
+       },
+       {
+        "cardId": 24,
+        "nameCard" : "FOS FINANCE-"
+       },
+       {
+        "cardId": 25,
+        "nameCard" : "FOS JEUNESSE ET SPORT"
+       },
+       {
+        "cardId": 26,
+        "nameCard" : "FOS-AGRI"
+       },
+       {
+        "cardId": 27,
+        "nameCard" : "FILIALE ONCF 1CL"
+       },
+       {
+        "cardId": 28,
+        "nameCard" : "FILIALE ONCF 2CL"
+       },
+       {
+        "cardId": 29,
+        "nameCard" : "FONDATION NATIONALE DES MUSES"
+       },
+       {
+        "cardId": 30,
+        "nameCard" : "GRAND PUBLIC"
+       },
+       {
+        "cardId": 31,
+        "nameCard" : "JEUNE"
+       },
+       {
+        "cardId": 32,
+        "nameCard" : "JOURNALISTE"
+       },
+       {
+        "cardId": 33,
+        "nameCard" : "MAP"
+       },
+       {
+        "cardId": 34,
+        "nameCard" : "MCDONALDS SUMMER DEALS"
+       },
+       {
+        "cardId": 35,
+        "nameCard" : "NTSARABLADI"
+       },
+       {
+        "cardId": 36,
+        "nameCard" : "PARLEMENTAIRE"
+       },
+       {
+        "cardId": 37,
+        "nameCard" : "RES CHEMINOT DEUXIME CLASSE"
+       },
+       {
+        "cardId": 38,
+        "nameCard" : "RESA CHEMINOT 1ER CLASSE SALON ALBORAQ"
+       },
+       {
+        "cardId": 39,
+        "nameCard" : "RESA CHEMINOT PREMIRE CLASSE"
+       },
+       {
+        "cardId": 40,
+        "nameCard" : "SENIOR"
+       },
+       {
+        "cardId": 41,
+        "nameCard" : "SUPRATOURS"
+       },
+       {
+        "cardId": 42,
+        "nameCard" : "SUPRATOURS TRAVEL"
+       },
+       {
+        "cardId": 43,
+        "nameCard" : "TARIF PETIT GROUPE"
+       },
+       {
+        "cardId": 44,
+        "nameCard" : "WELCOME BACK"
+       }
+    ]
+}

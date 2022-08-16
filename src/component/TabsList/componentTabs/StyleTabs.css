@@ -15,7 +15,7 @@
 .Forms {
     width: 100%;
     display: flex;
-    padding: 40px 36px 30px;
+    padding: 26px 0px;
 }
 
 .child:first-child {
@@ -24,7 +24,6 @@
 
 .child {
     width: 100%;
-    padding: 0px 14px;
     display: flex;
     align-items: flex-end;
 }

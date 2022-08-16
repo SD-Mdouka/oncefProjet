@@ -4,6 +4,8 @@ import Input from '../share-component/Input';
 import { Label } from '../share-component/Label';
 import { Paragraph } from '../../../share-component/Paragraph';
 import { BtnRecherche } from '../share-component/BtnRecherche';
+import InputClasses from '../share-component/InputInfo/InputClasses';
+import InputCard from '../share-component/InputInfo/InputCard';
 const ReserveCard = () => {
   return (
     <div id='ReserveCard' classNameName='ant-row'>
@@ -26,11 +28,7 @@ const ReserveCard = () => {
                 <div className='child '>
                   <div className='textfield'>
                     <Label text={'Ma carte'} classes='labelfieild ' />
-                    <Input
-                      placeholder={'Choisir'}
-                      type={'text'}
-                      name={'code'}
-                    />
+                    <InputCard />
                   </div>
                 </div>
                 <div className='childAdresse '>
@@ -87,11 +85,7 @@ const ReserveCard = () => {
             </div>
             <div className='textfield'>
               <Label text={'Mon confort'} classes='labelfieild' />
-              <Input
-                placeholder={'1 ére classe'}
-                type={'email'}
-                name={'email'}
-              />
+              <InputClasses />
             </div>
           </div>
           <div width='80' className='layoutBtn'>

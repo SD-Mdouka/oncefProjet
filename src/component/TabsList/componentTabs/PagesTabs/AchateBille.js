@@ -3,6 +3,7 @@ import { BtnRecherche } from '../share-component/BtnRecherche';
 import IconRserve from '../share-component/svgs/IconRserve';
 import Input from '../share-component/Input';
 import { Label } from '../share-component/Label';
+import InputClasses from '../share-component/InputInfo/InputClasses';
 
 const AchateBille = () => {
   return (
@@ -42,7 +43,7 @@ const AchateBille = () => {
         </div>
         <div className='textfield'>
           <Label text={'Mon confort'} classes='labelfieild' />
-          <Input placeholder={'1 ére classe'} type={'email'} name={'email'} />
+          <InputClasses />
         </div>
       </div>
       <div width='80' className='layoutBtn'>
