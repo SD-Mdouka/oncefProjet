@@ -112,12 +112,6 @@
     color: #4a20aa;
 }
 
-.filled:hover {
-    background-color: #e5dff1 !important;
-    border-color: #e5dff1 !important;
-    color: #4a20aa !important;
-}
-
 .primary {
     background: rgb(74, 32, 170);
     border: 1px solid rgb(74, 32, 170);
@@ -141,13 +135,4 @@
     transition: all 0.3s ease 0s;
     text-decoration: none;
     padding: 0px 20px;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-}
-
-.iconSvge {
-    width: 20px;
-    margin-top: 2px;
 }

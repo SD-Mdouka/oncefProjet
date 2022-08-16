@@ -5,7 +5,7 @@ import "./style.css";
 import HorierIcon from "./svgs/HorierIcon";
 import CardIcon from "./svgs/CardIcon";
 import ResirveIcon from "./svgs/ResirveIcon";
-import ComponentTaps from "./componentTabs";
+import { ComponentTaps } from "./componentTabs";
 
 const types = [
   {

@@ -52,7 +52,8 @@ export default function TabGroup() {
         </div>
 
         <div className="tabsPage stylePage">
-          {<ComponentTaps steps={active} />}
+          <ComponentTaps />
+          {active == !1 ? "No Taps" : active}
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ import "./style.css";
 import HorierIcon from "./svgs/HorierIcon";
 import CardIcon from "./svgs/CardIcon";
 import ResirveIcon from "./svgs/ResirveIcon";
-import ComponentTaps from "./componentTabs";
+import ComponentTaps from "./componentTabs/PagesTabs/Reservation";
 
 const types = [
   {
@@ -52,7 +52,7 @@ export default function TabGroup() {
         </div>
 
         <div className="tabsPage stylePage">
-          {<ComponentTaps steps={active} />}
+          <ComponentTaps />
         </div>
       </div>
     </>

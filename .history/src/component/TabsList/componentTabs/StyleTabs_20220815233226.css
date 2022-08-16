@@ -1,0 +1,13 @@
+.Layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.travelCaseSearch .searchForm {
+    padding: 0;
+    margin-bottom: 12px;
+}

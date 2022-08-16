@@ -37,22 +37,18 @@ content: "";
    
      }
      &::after{
-          content: "";
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 14px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-    bottom: -2px;
-    /*background: url("https://www.oncf-voyages.ma/static/media/coin.95d64182.svg") no-repeat;*/
+    right: -7px;
+    bottom: -5px;
+    background: #fff;
+    border-radius: 0 48% 48% 0;
+    /* background: url(https://www.oncf-voyages.ma/static/media/coin.95d64182.svg) no-repeat; */
     position: absolute;
-    transform: rotate(-90deg);
-    right: -10px;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    background:#fff;
-     border-radius:50% 25%;
      }
      
     `}

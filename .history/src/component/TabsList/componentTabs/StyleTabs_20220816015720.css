@@ -113,9 +113,9 @@
 }
 
 .filled:hover {
-    background-color: #e5dff1 !important;
-    border-color: #e5dff1 !important;
-    color: #4a20aa !important;
+    background-color: #e5dff1;
+    border-color: #e5dff1;
+    color: #4a20aa;
 }
 
 .primary {

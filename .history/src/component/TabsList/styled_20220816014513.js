@@ -42,17 +42,15 @@ content: "";
     width: 12px;
     height: 12px;
     transform: rotate(180deg);
-    bottom: -2px;
-    /*background: url("https://www.oncf-voyages.ma/static/media/coin.95d64182.svg") no-repeat;*/
+    bottom: 0px;
+    background: url("https://www.oncf-voyages.ma/static/media/coin.95d64182.svg") no-repeat;
     position: absolute;
     transform: rotate(-90deg);
-    right: -10px;
+    right: -11px;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    background:#fff;
-     border-radius:50% 25%;
      }
      
     `}

@@ -42,7 +42,7 @@ content: "";
     width: 12px;
     height: 12px;
     transform: rotate(180deg);
-    bottom: -2px;
+    bottom: -4px;
     /*background: url("https://www.oncf-voyages.ma/static/media/coin.95d64182.svg") no-repeat;*/
     position: absolute;
     transform: rotate(-90deg);

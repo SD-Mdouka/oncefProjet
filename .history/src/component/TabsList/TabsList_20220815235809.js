@@ -51,9 +51,7 @@ export default function TabGroup() {
           </ButtonGroup>
         </div>
 
-        <div className="tabsPage stylePage">
-          {<ComponentTaps steps={active} />}
-        </div>
+        <div className="tabsPage stylePage">{active}</div>
       </div>
     </>
   );
