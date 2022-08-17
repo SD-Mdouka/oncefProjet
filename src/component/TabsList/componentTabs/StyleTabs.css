@@ -4,7 +4,6 @@
     flex-direction: column;
     background: rgb(255, 255, 255);
     border-radius: 15px;
-    overflow: hidden;
 }
 
 
@@ -226,4 +225,42 @@
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
+}
+#btnChange .ant-btn{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: 30px;
+    left: 27px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 2px;
+    color: #fff;
+    border-color: transparent;
+}
+#btnChange .anticon{
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+#btnChange i {
+    display: inline-block;
+    -webkit-transition: margin-left .3s cubic-bezier(.645,.045,.355,1);
+    transition: margin-left .3s cubic-bezier(.645,.045,.355,1);
+    pointer-events: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#btnChange i svg {
+    fill: #ef2e41;
+    width: 22px;
+    height: 22px;
 }

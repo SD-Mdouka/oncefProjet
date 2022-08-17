@@ -1,0 +1,659 @@
+{
+    "gare":
+    [
+        {
+            "idGare": 1,
+            "label": "ADDAKHLA"
+        },
+        {
+            "idGare": 2,
+            "label": "AEROPORT MED V"
+        },
+        {
+            "idGare": 3,
+            "label": " AGADIR (SUPRAT.)"
+        },
+        {
+            "idGare": 4,
+            "label": "AGDZ (SUPRAT.)"
+        },
+        {
+            "idGare": 5,
+            "label": "AIN DEFALI"
+        },
+        {
+            "idGare": 6,
+            "label": " AIN SBIT"
+        },
+        {
+            "idGare": 7,
+            "label": "AIN SEBAA"
+        },
+        {
+            "idGare": 8,
+            "label": " AIN-TAOUJDATE"
+        },
+        {
+            "idGare": 9,
+            "label": "AL AKBA LHAMRA"
+        },
+        {
+            "idGare": 10,
+            "label": "ASILAH"
+        },
+        {
+            "idGare": 11,
+            "label": "ASSA"
+        },
+        {
+            "idGare": 12,
+            "label": "AZEMMOUR HALTE"
+        },
+        {
+            "idGare": 13,
+            "label": " AZROU (SUPRAT.)"
+        },
+        {
+            "idGare": 14,
+            "label": "BENGUERIR"
+        },
+        {
+            "idGare": 15,
+            "label": "BENI NSAR PORT"
+        },
+        {
+            "idGare": 16,
+            "label": "BENI NSAR VILLE"
+        },
+        {
+            "idGare": 17,
+            "label": "BENI-MELLAL"
+        },
+        {
+            "idGare": 18,
+            "label": "BENI-OUKIL"
+        },
+        {
+            "idGare": 19,
+            "label": "BERRECHID"
+        },
+        {
+            "idGare": 20,
+            "label": " BIDANE"
+        },
+        {
+            "idGare": 21,
+            "label": "BOUIZAKARNE"
+        },
+        {
+            "idGare": 22,
+            "label": "BOUJDOUR"
+        },
+        {
+            "idGare": 23,
+            "label": "BOUMALNE"
+        },
+        {
+            "idGare": 24,
+            "label": "BOUSKOURA"
+        },
+        {
+            "idGare": 25,
+            "label": "BOUZNIKA"
+        },
+        {
+            "idGare": 26,
+            "label": "CASA OASIS"
+        },
+        {
+            "idGare": 27,
+            "label": "CASA PORT"
+        },
+        {
+            "idGare": 28,
+            "label": "CASA VOYAGEURS"
+        },
+        {
+            "idGare": 29,
+            "label": "CHEBABAT"
+        },
+        {
+            "idGare": 30,
+            "label": "CHEFCHAOUEN"
+        },
+        {
+            "idGare": 31,
+            "label": "DALIA"
+        },
+        {
+            "idGare": 32,
+            "label": "DAR EL GUEDARI"
+        },
+        {
+            "idGare": 33,
+            "label": "EL AGREB"
+        },
+        {
+            "idGare": 34,
+            "label": "EL AIOUN"
+        },
+        {
+            "idGare": 35,
+            "label": "EL ARGOUB (SUPRA)"
+        },
+        {
+            "idGare": 36,
+            "label": "EL ARIA"
+        },
+        {
+            "idGare": 37,
+            "label": "EL GOUFAF"
+        },
+        {
+            "idGare": 38,
+            "label": "EL HAJEB (SUPRAT.)"
+        },
+        {
+            "idGare": 39,
+            "label": "EL JADIDA"
+        },
+        {
+            "idGare": 40,
+            "label": "EL KHEMISSET"
+        },
+        {
+            "idGare": 41,
+            "label": "EL KSAR EL KEBIR"
+        },
+        {
+            "idGare": 42,
+            "label": "ELKELAA MGOUNA"
+        },
+        {
+            "idGare": 43,
+            "label": "ENNOUASSER"
+        },
+        {
+            "idGare": 44,
+            "label": "EOUFOUSS (SUPRAT.)"
+        },
+        {
+            "idGare": 45,
+            "label": "ERFOUD (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 46,
+            "label": "ERRACHIDIA (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 47,
+            "label": "ERRICH (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 48,
+            "label": "ESSAOUIRA"
+        }
+        ,
+        {
+            "idGare": 49,
+            "label": "FACULTES"
+        }
+        ,
+        {
+            "idGare": 50,
+            "label": "FES"
+        }
+        ,
+        {
+            "idGare": 51,
+            "label": "FNIDEQ (SUPRA.)"
+        }
+        ,
+        {
+            "idGare": 52,
+            "label": "FOUM ZGUID"
+        }
+        ,
+        {
+            "idGare": 53,
+            "label": "FQUIH BEN SALAH"
+        },
+        {
+            "idGare": 54,
+            "label": "GARGARATE (SUPRA)"
+        }
+        ,
+        {
+            "idGare": 55,
+            "label": "GUELMIMA"
+        }
+        ,
+        {
+            "idGare": 56,
+            "label": "GUELMIME"
+        },
+        {
+            "idGare": 57,
+            "label": "GUERCIF"
+        }
+        ,
+        {
+            "idGare": 58,
+            "label": "FOUM ZGUID"
+        }
+        ,
+        {
+            "idGare": 59,
+            "label": "HASSI BERKANE"
+        },
+        {
+            "idGare": 60,
+            "label": "IGHREM"
+        }
+        ,
+        {
+            "idGare": 61,
+            "label": "INEZGANE (SUPRAT)"
+        }
+        ,
+        {
+            "idGare": 62,
+            "label": "JORF EL MELHA"
+        },
+        {
+            "idGare": 63,
+            "label": "KELAA DES SRAGHNAS"
+        }
+        ,
+        {
+            "idGare": 64,
+            "label": "KENITRA"
+        }
+        ,
+        {
+            "idGare": 65,
+            "label": "KHATT AZACANE"
+        }
+        ,
+        { 
+            "idGare": 66,
+            "label": "KHENIFRA (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 67,
+            "label": "KHOURIBGA"
+        }
+        ,
+        {
+            "idGare": 68,
+            "label": "LAAYOUNE"
+        }
+        ,
+        {
+            "idGare": 69,
+            "label": "LAAYOUNE PORT"
+        }
+        ,
+        {
+            "idGare": 70,
+            "label": "LAMHARIZ (SUPRA)"
+        }
+        ,
+        {
+            "idGare": 71,
+            "label": "MARRAKECH"
+        }
+        ,
+        {
+            "idGare": 72,
+            "label": "MARTIL"
+        }
+        ,
+        {
+            "idGare": 73,
+            "label": "MDIQ (SUPRA.)"
+        }
+        ,
+        {
+            "idGare": 74,
+            "label": "MECHRA BEL KSIRI"
+        },
+        { 
+            "idGare": 75,
+            "label": "MECHRA BEN ABBOU"
+        }
+        ,
+        {
+            "idGare": 76,
+            "label": "MEKNES"
+        }
+        ,
+        {
+            "idGare": 77,
+            "label": "MEKNES AL AMIR"
+        }
+        ,
+        {
+            "idGare": 78,
+            "label": "MELG EL OUIDANE"
+        }
+        ,
+        {
+            "idGare": 79,
+            "label": "MERS SULTAN"
+        }
+        ,
+        {
+            "idGare": 80,
+            "label": "MERZOUGA (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 81,
+            "label": "MIDELT (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 82,
+            "label": "MOHAMMEDIA"
+        }
+        ,
+        {
+            "idGare": 83,
+            "label": "MOUALINE EL OUED"
+        },
+        { 
+            "idGare": 84,
+            "label": "MRIRT (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 85,
+            "label": "MRIZIG"
+        }
+        ,
+        {
+            "idGare": 86,
+            "label": "MSOUN"
+        }
+        ,
+        {
+            "idGare": 87,
+            "label": "NADOR SUD"
+        }
+        ,
+        {
+            "idGare": 89,
+            "label": "NADOR VILLE"
+        }
+        ,
+        {
+            "idGare": 90,
+            "label": "NAIMA"
+        }
+        ,
+        {
+            "idGare": 91,
+            "label": "OUARZAZATE"
+        }
+        ,
+        {
+            "idGare": 92,
+            "label": "OUED METLILI"
+        }
+        ,
+        {
+            "idGare": 93,
+            "label": "OUED ZEM"
+        },
+        { 
+            "idGare": 94,
+            "label": "OUELED RAHOU"
+        }
+        ,
+        {
+            "idGare": 95,
+            "label": "OUEZZANE"
+        }
+        ,
+        {
+            "idGare": 96,
+            "label": "OUJDA"
+        }
+        ,
+        {
+            "idGare": 97,
+            "label": "OULAD TEIMA"
+        }
+        ,
+        {
+            "idGare": 98,
+            "label": "RABAT AGDAL"
+        }
+        ,
+        {
+            "idGare": 99,
+            "label": "RABAT VILLE"
+        }
+        ,
+        {
+            "idGare": 100,
+            "label": "RAS EL AIN"
+        }
+        ,
+        {
+            "idGare": 101,
+            "label": "RISSANI (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 102,
+            "label": "SAFI"
+        },
+        { 
+            "idGare": 103,
+            "label": "SAFI (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 104,
+            "label": "SALE"
+        }
+        ,
+        {
+            "idGare": 105,
+            "label": "SALE TABRIQUET"
+        }
+        ,
+        {
+            "idGare": 106,
+            "label": "SEBAA-AIOUN"
+        }
+        ,
+        {
+            "idGare": 107,
+            "label": "SELOUANE"
+        }
+        ,
+        {
+            "idGare": 108,
+            "label": "SETTAT"
+        }
+        ,
+        {
+            "idGare": 109,
+            "label": "SIDI BOU OTHMANE"
+        }
+        ,
+        {
+            "idGare": 110,
+            "label": "SIDI EL AIDI"
+        }
+        ,
+        {
+            "idGare": 111,
+            "label": "SIDI HAJJAJ"
+        },
+        { 
+            "idGare": 112,
+            "label": "SIDI HARAZEM"
+        }
+        ,
+        {
+            "idGare": 113,
+            "label": "SIDI KACEM"
+        }
+        ,
+        {
+            "idGare": 114,
+            "label": "SIDI RHAZOUANI"
+        }
+        ,
+        {
+            "idGare": 115,
+            "label": "SIDI SLIMANE MEDINA"
+        }
+        ,
+        {
+            "idGare": 116,
+            "label": "SIDI YAHIA"
+        }
+        ,
+        {
+            "idGare": 117,
+            "label": "SKHIRAT"
+        }
+        ,
+        {
+            "idGare": 118,
+            "label": "SMARA"
+        }
+        ,
+        {
+            "idGare": 119,
+            "label": "SOUK EL ARBAA"
+        }
+        ,
+        {
+            "idGare": 120,
+            "label": "TAMANAR"
+        },
+        { 
+            "idGare": 121,
+            "label": "TAMDROST"
+        }
+        ,
+        {
+            "idGare": 122,
+            "label": "TAMELALT (SUPRAT.)"
+        }
+        ,
+        {
+            "idGare": 123,
+            "label": "TAN TAN"
+        }
+        ,
+        {
+            "idGare": 124,
+            "label": "TAN TAN PORT"
+        }
+        ,
+        {
+            "idGare": 125,
+            "label": "TANGER VILLE"
+        }
+        ,
+        {
+            "idGare": 126,
+            "label": "TAOURIRT"
+        }
+        ,
+        {
+            "idGare": 127,
+            "label": "TARFAYA"
+        }
+        ,
+        {
+            "idGare": 128,
+            "label": "TAROUDANT"
+        }
+        ,
+        {
+            "idGare": 129,
+            "label": "TATA"
+        }, 
+        {
+            "idGare": 130,
+            "label": "TAZA"
+        }
+        ,
+        {
+            "idGare": 131,
+            "label": "TCHIKA (SUPRA)"
+        },
+        { 
+            "idGare": 132,
+            "label": "TEMARA"
+        }
+        ,
+        {
+            "idGare": 133,
+            "label": "TETOUAN"
+        }
+        ,
+        {
+            "idGare": 134,
+            "label": "TINERHIR"
+        }
+        ,
+        {
+            "idGare": 135,
+            "label": "TINJDAD"
+        }
+        ,
+        {
+            "idGare": 136,
+            "label": "TISSINT"
+        }
+        ,
+        {
+            "idGare": 137,
+            "label": "TIZNIT"
+        }
+        ,
+        {
+            "idGare": 138,
+            "label": "TLETA RISSANA"
+        }
+        ,
+        {
+            "idGare": 139,
+            "label": "TNINE SIDI LYAMAN"
+        }
+        ,
+        {
+            "idGare": 140,
+            "label": "TOUABAA"
+        },
+        {
+            "idGare": 141,
+            "label": "YOUSSOUFIA"
+        },
+        {
+            "idGare": 142,
+            "label": "ZAG"
+        },
+        {
+            "idGare": 143,
+            "label": "ZAGORA (SUPRAT.)"
+        },
+        {
+            "idGare": 144,
+            "label": "ZAOUIAT CHEHCH (SUPRAT.)"
+        }
+    ]
+}

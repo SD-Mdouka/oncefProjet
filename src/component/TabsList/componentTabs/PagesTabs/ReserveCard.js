@@ -6,6 +6,8 @@ import { Paragraph } from '../../../share-component/Paragraph';
 import { BtnRecherche } from '../share-component/BtnRecherche';
 import InputClasses from '../share-component/InputInfo/InputClasses';
 import InputCard from '../share-component/InputInfo/InputCard';
+import InputGare from '../share-component/InputInfo/InputGare';
+import { BtnChange } from '../share-component/BtnChange';
 const ReserveCard = () => {
   return (
     <div id='ReserveCard' classNameName='ant-row'>
@@ -24,7 +26,7 @@ const ReserveCard = () => {
                   classStyle={'mt-0 mb-[1em]'}
                 />
               </div>
-              <div className='!pl-[12px] !pr-[12px] flex mb-2'>
+              <div className='!pl-[12px] !pr-[12px] flex mb-2 w-[140%]'>
                 <div className='child '>
                   <div className='textfield'>
                     <Label text={'Ma carte'} classes='labelfieild ' />
@@ -46,22 +48,15 @@ const ReserveCard = () => {
           </div>
         </div>
         <div id='reservation' className='Forms searchForm'>
-          <div className='child flex-col space-x-1'>
+          <div className='child flex-col space-x-1 ml-3 mr-4'>
             <div className='textfield'>
               <Label text={'Ma gare de départ'} classes='labelfieild' />
-              <Input
-                placeholder={'Ma gare de départ'}
-                type={'text'}
-                name={'code'}
-              />
+              <InputGare placeHolder={'Ma gare de départ'} />
             </div>
-            <div className='textfield'>
+            <BtnChange />
+            <div className='textfield mt-[25px]'>
               <Label text={`Ma gare de d'arrivée`} classes='labelfieild' />
-              <Input
-                placeholder={"Ma gare d'arrivée"}
-                type={'text'}
-                name={'code'}
-              />
+              <InputGare placeHolder={"Ma gare d'arrivée"} />
             </div>
           </div>
           <div className='childAdresse flex-col space-x-1'>
@@ -69,7 +64,7 @@ const ReserveCard = () => {
               <Label text={'Ma date de départ'} classes='labelfieild' />
               <Input placeholder={'15/08/2022'} type={'email'} name={'email'} />
             </div>
-            <div className='textfield'>
+            <div className='textfield mt-[60px]'>
               <Label text={'Ma date de retour'} classes='labelfieild' />
               <Input placeholder={'mon retour'} type={'email'} name={'email'} />
             </div>
@@ -83,7 +78,7 @@ const ReserveCard = () => {
                 name={'email'}
               />
             </div>
-            <div className='textfield'>
+            <div className='textfield mt-[58px]'>
               <Label text={'Mon confort'} classes='labelfieild' />
               <InputClasses />
             </div>
@@ -92,7 +87,7 @@ const ReserveCard = () => {
             <div className='ant-col searchForm_footer booking '>
               <BtnRecherche
                 text=''
-                classIcon={'100'}
+                classIcon={'80'}
                 classStyle='btnRechercheIcon filled primary medium btn-primary'
               />
             </div>

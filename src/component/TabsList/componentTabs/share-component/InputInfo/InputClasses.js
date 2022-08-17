@@ -22,7 +22,7 @@ const InputClasses = () => {
           className={activeTab === 'classe1' ? 'active' : ''}
           onClick={handleTab1}
         >
-          <span className='ant-radio-button-wrapper'>
+          <span className='button-wrapper'>
             <span>
               1<sup>ère</sup>
               classe
@@ -33,7 +33,7 @@ const InputClasses = () => {
           className={activeTab === 'classe2' ? 'active' : ''}
           onClick={handleTab2}
         >
-          <span className='ant-radio-button-wrapper'>
+          <span className='button-wrapper'>
             <span>
               2<sup>ème</sup>
               classe
@@ -44,7 +44,7 @@ const InputClasses = () => {
           className={activeTab === 'classe3' ? 'active' : ''}
           onClick={handleTab3}
         >
-          <span className='ant-radio-button-wrapper'>
+          <span className='button-wrapper'>
             <span>Lit single</span>
           </span>
         </li>
