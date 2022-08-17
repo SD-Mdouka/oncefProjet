@@ -109,8 +109,7 @@
     border: none !important;
 }
 
-.MuiFormControl-root,
-.css-viou3o-MuiAutocomplete-root .MuiOutlinedInput-root {
+.MuiFormControl-root {
     position: relative;
     height: 50px;
     width: 100%;

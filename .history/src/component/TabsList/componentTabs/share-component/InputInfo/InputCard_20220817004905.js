@@ -8,17 +8,11 @@ export default function ComboBox() {
   return (
     <Autocomplete
       disablePortal
-      className="input inputInside  InputStyle"
+      id="inputCard"
+      className="input inputInside InputStyle"
       options={cardReduit.cardReduit}
       sx={{ width: 300 }}
-      renderInput={(params) => (
-        <TextField
-          id="inputCard"
-          className="inputInside"
-          {...params}
-          label="Choisir"
-        />
-      )}
+      renderInput={(params) => <TextField {...params} label="Choisir" />}
     />
   );
 }

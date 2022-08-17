@@ -12,12 +12,7 @@ export default function ComboBox() {
       options={cardReduit.cardReduit}
       sx={{ width: 300 }}
       renderInput={(params) => (
-        <TextField
-          id="inputCard"
-          className="inputInside"
-          {...params}
-          label="Choisir"
-        />
+        <TextField id="inputCard" className="" {...params} label="Choisir" />
       )}
     />
   );

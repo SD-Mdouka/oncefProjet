@@ -14,7 +14,7 @@ export default function ComboBox() {
       renderInput={(params) => (
         <TextField
           id="inputCard"
-          className="inputInside"
+          className="input inputInside  InputStyle"
           {...params}
           label="Choisir"
         />

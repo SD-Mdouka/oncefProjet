@@ -104,13 +104,7 @@
     padding: 7px 22px;
 }
 
-.css-viou3o-MuiAutocomplete-root {
-    background-color: transparent !important;
-    border: none !important;
-}
-
-.MuiFormControl-root,
-.css-viou3o-MuiAutocomplete-root .MuiOutlinedInput-root {
+#inputCard .inputInside {
     position: relative;
     height: 50px;
     width: 100%;

@@ -105,12 +105,11 @@
 }
 
 .css-viou3o-MuiAutocomplete-root {
-    background-color: transparent !important;
-    border: none !important;
+    background-color: transparent;
+    border: none;
 }
 
-.MuiFormControl-root,
-.css-viou3o-MuiAutocomplete-root .MuiOutlinedInput-root {
+.css-viou3o-MuiAutocomplete-root {
     position: relative;
     height: 50px;
     width: 100%;

@@ -1,4 +1,4 @@
-{
+export {
     "cardReduit": [{
             "cardId": 1,
             "label": "10ZEN AL BORAQ 1CL"
