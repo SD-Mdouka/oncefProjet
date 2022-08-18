@@ -5,7 +5,7 @@ import { Dropdown, Menu, Space } from "antd";
 
 const menu = (
   <Menu
-    className="w-[130%] !absolute !left-2"
+    className="w-[100%]"
     items={[
       {
         label: (
@@ -13,8 +13,6 @@ const menu = (
             <i className="spacien">
               Adulte(s) <small>&gt; 15 ans</small>
             </i>
-            <div></div>
-            {/* <button>b</button> */}
           </label>
         ),
         key: "0",

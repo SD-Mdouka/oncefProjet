@@ -13,10 +13,9 @@ const menu = (
             <i className="spacien">
               Adulte(s) <small>&gt; 15 ans</small>
             </i>
-            <div></div>
-            {/* <button>b</button> */}
           </label>
         ),
+        button: <button disabled="disabled"></button>,
         key: "0",
       },
       {

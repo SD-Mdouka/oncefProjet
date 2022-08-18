@@ -1,20 +1,21 @@
 import React from "react";
 import "antd/dist/antd.css";
-import { UserOutlined } from "@ant-design/icons";
+import { DownOutlined, UserOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
 
 const menu = (
   <Menu
-    className="w-[130%] !absolute !left-2"
+    id="#dropMenu"
+    className="mt-5 p-9 border"
     items={[
       {
         label: (
           <label className="TravelersCounterItem_label">
-            <i className="spacien">
-              Adulte(s) <small>&gt; 15 ans</small>
-            </i>
-            <div></div>
-            {/* <button>b</button> */}
+            <i
+              aria-label="icon: umaxKidsser"
+              className="anticon anticon-umaxKidsser"
+            ></i>
+            Adulte(s) <small>&gt; 15 ans</small>
           </label>
         ),
         key: "0",
@@ -24,13 +25,14 @@ const menu = (
       },
       {
         label: (
-          <label className="TravelersCounterItem_label flex flex-row">
-            <i className="spacien">
-              Enfant(s) <small>&lt; 15 ans</small>
-            </i>
-          </label>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.aliyun.com"
+          >
+            2nd menu item
+          </a>
         ),
-        icon: <UserOutlined className="mr-2" />,
         key: "1",
       },
     ]}
@@ -38,7 +40,7 @@ const menu = (
 );
 
 const DropdownVoyger = () => (
-  <Dropdown id="#dropMenu" className="InputStyle inputInside" overlay={menu}>
+  <Dropdown className="InputStyle inputInside" overlay={menu}>
     <a onClick={(e) => e.preventDefault()}>
       <span
         style={{

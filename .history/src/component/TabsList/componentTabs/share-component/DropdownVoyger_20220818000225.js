@@ -5,16 +5,14 @@ import { Dropdown, Menu, Space } from "antd";
 
 const menu = (
   <Menu
-    className="w-[130%] !absolute !left-2"
+    id="#dropMenu"
+    className="mt-5 p-9 border"
     items={[
       {
         label: (
           <label className="TravelersCounterItem_label">
-            <i className="spacien">
-              Adulte(s) <small>&gt; 15 ans</small>
-            </i>
-            <div></div>
-            {/* <button>b</button> */}
+            <i className="spacien"></i>
+            Adulte(s) <small>&gt; 15 ans</small>
           </label>
         ),
         key: "0",
@@ -24,13 +22,12 @@ const menu = (
       },
       {
         label: (
-          <label className="TravelersCounterItem_label flex flex-row">
-            <i className="spacien">
-              Enfant(s) <small>&lt; 15 ans</small>
-            </i>
+          <label className="TravelersCounterItem_label">
+            <i className="spacien"></i>
+            <UserOutlined />
+            Enfant(s) <small>&lt; 15 ans</small>
           </label>
         ),
-        icon: <UserOutlined className="mr-2" />,
         key: "1",
       },
     ]}
@@ -38,7 +35,7 @@ const menu = (
 );
 
 const DropdownVoyger = () => (
-  <Dropdown id="#dropMenu" className="InputStyle inputInside" overlay={menu}>
+  <Dropdown className="InputStyle inputInside" overlay={menu}>
     <a onClick={(e) => e.preventDefault()}>
       <span
         style={{

@@ -5,7 +5,7 @@ import { Dropdown, Menu, Space } from "antd";
 
 const menu = (
   <Menu
-    className="w-[130%] !absolute !left-2"
+    className="mt-5 p-9 border"
     items={[
       {
         label: (
@@ -13,8 +13,6 @@ const menu = (
             <i className="spacien">
               Adulte(s) <small>&gt; 15 ans</small>
             </i>
-            <div></div>
-            {/* <button>b</button> */}
           </label>
         ),
         key: "0",
@@ -24,13 +22,14 @@ const menu = (
       },
       {
         label: (
-          <label className="TravelersCounterItem_label flex flex-row">
+          <label className="TravelersCounterItem_label">
+            <UserOutlined className="mt-4" />
             <i className="spacien">
+              {" "}
               Enfant(s) <small>&lt; 15 ans</small>
             </i>
           </label>
         ),
-        icon: <UserOutlined className="mr-2" />,
         key: "1",
       },
     ]}
