@@ -1,59 +1,55 @@
-import React from "react";
-import "antd/dist/antd.css";
-import { UserOutlined } from "@ant-design/icons";
-import { Dropdown, Menu, Space } from "antd";
+import React, { useState, useEffect } from 'react';
+import 'antd/dist/antd.css';
+import { UserOutlined } from '@ant-design/icons';
+import { Dropdown, Menu, Space } from 'antd';
+import FunctionCounter from '../../../../helpers/FunctionCounter';
 
 const menu = (
   <Menu
-    className="w-[130%] !absolute !left-2"
+    id='dropMenu'
+    onClick={(e) => e.preventDefault()}
+    className='w-[130%] !absolute !left-2'
     items={[
       {
-        label: (
-          <label className="TravelersCounterItem_label">
-            <i className="spacien">
-              Adulte(s) <small>&gt; 15 ans</small>
-            </i>
-            <div></div>
-            {/* <button>b</button> */}
-          </label>
-        ),
-        key: "0",
+        label: <FunctionCounter countAdulte={1} nameUser='Adulte' />,
+        key: '0',
       },
       {
-        type: "divider",
+        type: 'divider',
       },
       {
-        label: (
-          <label className="TravelersCounterItem_label flex flex-row">
-            <i className="spacien">
-              Enfant(s) <small>&lt; 15 ans</small>
-            </i>
-          </label>
-        ),
-        icon: <UserOutlined className="mr-2" />,
-        key: "1",
+        label: <FunctionCounter countEnfant={0} nameUser='Enfant' />,
+        icon: <UserOutlined className=' !text-[#4a20aa]' />,
+        key: '1',
       },
     ]}
   />
 );
 
-const DropdownVoyger = () => (
-  <Dropdown id="#dropMenu" className="InputStyle inputInside" overlay={menu}>
-    <a onClick={(e) => e.preventDefault()}>
-      <span
-        style={{
-          borderColor: "#bda7ef",
-          color: "#4a20aa",
-          lineHeight: "2px",
-          letterSpacing: "1px",
-        }}
-      >
-        <Space>
-          <UserOutlined />1 Adulte
-        </Space>
-      </span>
-    </a>
-  </Dropdown>
-);
+const DropdownVoyger = () => {
+  return (
+    <Dropdown
+      id='dropMenu'
+      className='InputStyle inputInside'
+      trigger={['click']}
+      overlay={menu}
+    >
+      <a>
+        <span
+          style={{
+            borderColor: '#bda7ef',
+            color: '#4a20aa',
+            lineHeight: '2px',
+            letterSpacing: '1px',
+          }}
+        >
+          <Space>
+            <UserOutlined />1 Adulte
+          </Space>
+        </span>
+      </a>
+    </Dropdown>
+  );
+};
 
 export default DropdownVoyger;
