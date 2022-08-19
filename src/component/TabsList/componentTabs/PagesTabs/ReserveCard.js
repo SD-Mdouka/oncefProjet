@@ -8,6 +8,8 @@ import InputClasses from '../share-component/InputInfo/InputClasses';
 import InputCard from '../share-component/InputInfo/InputCard';
 import InputGare from '../share-component/InputInfo/InputGare';
 import { BtnChange } from '../share-component/BtnChange';
+import DropdownVoyger from '../share-component/DropdownVoyger';
+import InputDate from '../share-component/InputInfo/InputDate';
 const ReserveCard = () => {
   return (
     <div id='ReserveCard' classNameName='ant-row'>
@@ -62,7 +64,7 @@ const ReserveCard = () => {
           <div className='childAdresse flex-col space-x-1'>
             <div className='textfield'>
               <Label text={'Ma date de départ'} classes='labelfieild' />
-              <Input placeholder={'15/08/2022'} type={'email'} name={'email'} />
+              <InputDate />
             </div>
             <div className='textfield mt-[60px]'>
               <Label text={'Ma date de retour'} classes='labelfieild' />
@@ -72,22 +74,18 @@ const ReserveCard = () => {
           <div className='childAdresse flex-col space-x-1'>
             <div className='textfield'>
               <Label text={'Voyageurs'} classes='labelfieild' />
-              <Input
-                placeholder={'1 Adulte(s)'}
-                type={'email'}
-                name={'email'}
-              />
+              <DropdownVoyger />
             </div>
             <div className='textfield mt-[58px]'>
               <Label text={'Mon confort'} classes='labelfieild' />
               <InputClasses />
             </div>
           </div>
-          <div width='80' className='layoutBtn'>
+          <div className='layoutBtn'>
             <div className='ant-col searchForm_footer booking '>
               <BtnRecherche
                 text=''
-                classIcon={'80'}
+                classIcon={'!w-[110px] !h-[110px]'}
                 classStyle='btnRechercheIcon filled primary medium btn-primary'
               />
             </div>

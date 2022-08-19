@@ -3,26 +3,26 @@
 @tailwind utilities;
 * {
     margin: 0;
-    font-family: "EncodeSansExpanded Regular", sans-serif;
+    font-family: "EncodeSansExpanded SemiBold", sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: "EncodeSansExpanded Regular", sans-serif;
+    font-family: "EncodeSansExpanded SemiBold", sans-serif !important;
 }
 
 .ant-layout-content {
-    -ms-flex: auto;
-    flex: auto;
-    min-height: 0;
+    -ms-flex: auto !important;
+    flex: auto !important;
+    min-height: 0 !important;
 }
 
 .b_homeBanner {
-    position: relative;
-    height: auto;
-    background: #6a0dad;
-    padding: 40px 0 130px 100px;
+    position: relative !important;
+    height: auto !important;
+    background: #6a0dad !important;
+    padding: 40px 0 130px 100px !important;
 }
 
 .b_homeBanner .main {

@@ -1,68 +1,77 @@
-import React, { useState, useEffect, useRef } from "react";
-import "antd/dist/antd.css";
-import { UserOutlined } from "@ant-design/icons";
-import { Dropdown, Menu, Space } from "antd";
+import React, { useState, useEffect, useRef } from 'react';
+import 'antd/dist/antd.css';
+import { UserOutlined } from '@ant-design/icons';
+import { Dropdown, Menu, Space } from 'antd';
 
 const DropdownVoyger = () => {
-  const [counter, setCounter] = useState(0);
-  const [User, setUser] = useState("");
-
-  const btnDecRef = useRef(null);
-  const btnIncRef = useRef(null);
-  // Counter floor when the length is 6 Adulte or 4 enfant
-  useEffect(() => {
-    if (counter >= 6) {
-      // btnDecRef.current.disabled = false;
-      // btnIncRef.current.disabled = false;
-      console.log("good" + User);
-    }
-  }, [counter]);
+  const [counterAdulte, setCounterAdulte] = useState(0);
+  const [counterKids, setCounterKids] = useState(0);
 
   //increase counter
+  // Counter floor when the length is 6 Adulte or 4 enfant
 
-  const increase = () => {
-    setCounter((count) => count + 1);
+  const increase = (User) => {
+    if (User == 'adulte') {
+      if (counterAdulte < 6 && counterKids < 6 - counterAdulte) {
+        setCounterAdulte((count) => count + 1);
+      }
+    }
+    if (User == 'kids') {
+      if (counterKids < 4 && counterAdulte < 6 - counterKids) {
+        setCounterKids((count) => count + 1);
+      }
+    }
   };
 
   //decrease counter
-  const decrease = () => {
-    setCounter((count) => count - 1);
+  const decrease = (User) => {
+    if (User == 'adulte') {
+      if (counterAdulte <= 6 && counterAdulte > 1) {
+        setCounterAdulte((count) => count - 1);
+      }
+    }
+    if (User == 'kids') {
+      if (counterKids < 6 && counterKids > 0) {
+        setCounterKids((count) => count - 1);
+      }
+    }
   };
 
   //function couter
-  const couters = (Users) => {
+  const countersAdulte = () => {
     return (
-      <div className="text-[#4a20aa] inline-block p-4 relative">
+      <div className='text-[#4a20aa] inline-block p-4 text-xl space-x-2 relative'>
         <button
-          className="bg-[#f4f1f7] rounded-[50%] w-5"
-          ref={btnDecRef}
-          onClick={decrease}
+          className='bg-[#f4f1f7] rounded-[50%] w-5'
+          onClick={() => decrease('adulte')}
         >
           -
         </button>
-        <span>
-          {Users === "Adulte" ? (
-            <input
-              type={"number"}
-              defaultValue="1"
-              width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
-              value={counter + 1}
-            />
-          ) : (
-            <input
-              type={"number"}
-              defaultValue="0"
-              className="w-[30px] bg-[#fff]"
-              value={counter}
-            />
-          )}
-        </span>
+        <span>{counterAdulte === 0 ? counterAdulte + 1 : counterAdulte}</span>
+
         <button
-          className="bg-[#f4f1f7] rounded-[50%] w-5"
-          ref={btnIncRef}
-          onClick={increase}
+          className='bg-[#f4f1f7] rounded-[50%] w-5'
+          onClick={() => increase('adulte')}
+        >
+          +
+        </button>
+      </div>
+    );
+  };
+  const countersKids = () => {
+    return (
+      <div className='text-[#4a20aa] inline-block p-4 text-xl space-x-2 relative'>
+        <button
+          className='bg-[#f4f1f7] rounded-[50%] w-5'
+          onClick={() => decrease('kids')}
+        >
+          -
+        </button>
+        <span> {counterKids}</span>
+
+        <button
+          className='bg-[#f4f1f7] rounded-[50%] w-5'
+          onClick={() => increase('kids')}
         >
           +
         </button>
@@ -72,39 +81,39 @@ const DropdownVoyger = () => {
 
   const menu = (
     <Menu
-      id="dropMenu"
+      id='dropMenu'
       onClick={(e) => e.preventDefault()}
-      className="w-[130%] !absolute !left-2"
+      className='w-[130%] !absolute !left-2'
       items={[
         {
           label: (
             <>
-              <div className="TravelersCounterItem_label inline-block w-full">
-                <span className="spacien">
+              <div className='TravelersCounterItem_label text-xl w-full'>
+                <span className='spacien mt-7 text-xl'>
                   Adulte (s) <small>&gt; 15 ans</small>
                 </span>
-                {couters("Adulte")}
+                <span className='!float-right'>{countersAdulte()}</span>
               </div>
             </>
           ),
-          key: "0",
+          key: '0',
         },
         {
-          type: "divider",
+          type: 'divider',
         },
         {
           label: (
             <>
-              <div className="TravelersCounterItem_label inline-block w-full">
-                <span className="spacien">
+              <div className='TravelersCounterItem_label w-full'>
+                <span className='spacien !text-center mt-7'>
                   Enfant (s) <small>&lt; 15 ans</small>
                 </span>
-                <span className="-ml-6">{couters()}</span>
+                <span className='!float-right'>{countersKids()}</span>
               </div>
             </>
           ),
-          icon: <UserOutlined className=" !text-[#4a20aa]" />,
-          key: "1",
+          icon: <UserOutlined className=' !text-[#4a20aa]' />,
+          key: '1',
         },
       ]}
     />
@@ -112,27 +121,29 @@ const DropdownVoyger = () => {
 
   return (
     <Dropdown
-      id="dropMenu"
-      className="InputStyle inputInside"
-      trigger={["click"]}
+      id='dropMenu'
+      className='InputStyle inputInside'
+      trigger={['click']}
       overlay={menu}
     >
       <a>
         <span
           style={{
-            borderColor: "#bda7ef",
-            color: "#4a20aa",
-            lineHeight: "2px",
-            letterSpacing: "1px",
+            borderColor: '#bda7ef',
+            color: '#4a20aa',
+            lineHeight: '2px',
+            letterSpacing: '1px',
           }}
         >
           <Space>
-            <UserOutlined />1 Adulte
+            <UserOutlined />
+            {counterAdulte === 0 ? counterAdulte + 1 : counterAdulte} Adulte (s)
+            {counterKids > 0 && `,${counterKids} Enfant (s)`}
           </Space>
         </span>
       </a>
     </Dropdown>
   );
 };
-
+export const counterAdulte = '';
 export default DropdownVoyger;

@@ -58,41 +58,6 @@
     font-size: 1.1rem;
 }
 
-.input {
-    height: 46px;
-    font-size: 14px;
-    border: 1px solid #bda7ef;
-    padding: 7px 22px;
-}
-
-.inputInside {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    padding: 7px 30px;
-    font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: rgb(74, 32, 170);
-    border: 2px solid rgb(189, 167, 239);
-    border-radius: 30px;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
-
-.InputStyle {
-    height: 46px;
-    font-size: 14px;
-    border: 1px solid #bda7ef;
-    padding: 7px 22px;
-}
 
 .childAdresse {
     width: 100%;
@@ -159,7 +124,7 @@
 .iconSvge {
     width: 25px;
     margin-top: 2px;
-    margin-left: -30px;
+    margin-left: -50px;
 }
 
 

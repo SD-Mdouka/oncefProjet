@@ -46,7 +46,7 @@ const AchateBille = () => {
         <div className='ant-col searchForm_footer booking '>
           <BtnRecherche
             text=''
-            classIcon={'80'}
+            classIcon={'!w-[110px] !h-[110px]'}
             classStyle='btnRechercheIcon filled primary medium btn-primary'
           />
         </div>

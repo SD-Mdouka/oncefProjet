@@ -30,11 +30,11 @@ const HorierConslute = () => {
           <Input placeholder={'mon retour'} type={'email'} name={'email'} />
         </div>
       </div>
-      <div width='80' className='layoutBtn '>
+      <div className='layoutBtn '>
         <div className='ant-col searchForm_footer booking '>
           <BtnRecherche
             text=''
-            classIcon={'80'}
+            classIcon={'!w-[110px] !h-[110px]'}
             classStyle='btnRechercheIcon filled primary medium btn-primary'
           />
         </div>
