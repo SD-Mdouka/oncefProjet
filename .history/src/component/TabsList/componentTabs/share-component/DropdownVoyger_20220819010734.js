@@ -31,6 +31,7 @@ const DropdownVoyger = () => {
 
   //function couter
   const couters = (Users) => {
+    setUser("Adulte");
     return (
       <div className="text-[#4a20aa] inline-block p-4 relative">
         <button
@@ -40,25 +41,7 @@ const DropdownVoyger = () => {
         >
           -
         </button>
-        <span>
-          {Users === "Adulte" ? (
-            <input
-              type={"number"}
-              defaultValue="1"
-              width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
-              value={counter + 1}
-            />
-          ) : (
-            <input
-              type={"number"}
-              defaultValue="0"
-              className="w-[30px] bg-[#fff]"
-              value={counter}
-            />
-          )}
-        </span>
+        <span>{Users === "Adulte" ? counter + 1 : counter}</span>
         <button
           className="bg-[#f4f1f7] rounded-[50%] w-5"
           ref={btnIncRef}

@@ -1,22 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { UserOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
 
 const DropdownVoyger = () => {
   const [counter, setCounter] = useState(0);
-  const [User, setUser] = useState("");
-
-  const btnDecRef = useRef(null);
-  const btnIncRef = useRef(null);
-  // Counter floor when the length is 6 Adulte or 4 enfant
-  useEffect(() => {
-    if (counter >= 6) {
-      // btnDecRef.current.disabled = false;
-      // btnIncRef.current.disabled = false;
-      console.log("good" + User);
-    }
-  }, [counter]);
 
   //increase counter
 
@@ -33,37 +21,11 @@ const DropdownVoyger = () => {
   const couters = (Users) => {
     return (
       <div className="text-[#4a20aa] inline-block p-4 relative">
-        <button
-          className="bg-[#f4f1f7] rounded-[50%] w-5"
-          ref={btnDecRef}
-          onClick={decrease}
-        >
+        <button className="bg-[#f4f1f7] rounded-[50%] w-5" onClick={decrease}>
           -
         </button>
-        <span>
-          {Users === "Adulte" ? (
-            <input
-              type={"number"}
-              defaultValue="1"
-              width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
-              value={counter + 1}
-            />
-          ) : (
-            <input
-              type={"number"}
-              defaultValue="0"
-              className="w-[30px] bg-[#fff]"
-              value={counter}
-            />
-          )}
-        </span>
-        <button
-          className="bg-[#f4f1f7] rounded-[50%] w-5"
-          ref={btnIncRef}
-          onClick={increase}
-        >
+        <span>{Users === "Adulte" ? counter + 1 : counter}</span>
+        <button className="bg-[#f4f1f7] rounded-[50%] w-5" onClick={increase}>
           +
         </button>
       </div>
@@ -104,7 +66,7 @@ const DropdownVoyger = () => {
             </>
           ),
           icon: <UserOutlined className=" !text-[#4a20aa]" />,
-          key: "1",
+          key: "0",
         },
       ]}
     />

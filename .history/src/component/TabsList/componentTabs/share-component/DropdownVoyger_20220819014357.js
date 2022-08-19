@@ -42,21 +42,9 @@ const DropdownVoyger = () => {
         </button>
         <span>
           {Users === "Adulte" ? (
-            <input
-              type={"number"}
-              defaultValue="1"
-              width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
-              value={counter + 1}
-            />
+            <input type={"number"} defaultValue={counter + 1} />
           ) : (
-            <input
-              type={"number"}
-              defaultValue="0"
-              className="w-[30px] bg-[#fff]"
-              value={counter}
-            />
+            <input type={"number"} defaultValue={counter} />
           )}
         </span>
         <button

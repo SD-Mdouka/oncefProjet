@@ -5,18 +5,6 @@ import { Dropdown, Menu, Space } from "antd";
 
 const DropdownVoyger = () => {
   const [counter, setCounter] = useState(0);
-  const [User, setUser] = useState("");
-
-  const btnDecRef = useRef(null);
-  const btnIncRef = useRef(null);
-  // Counter floor when the length is 6 Adulte or 4 enfant
-  useEffect(() => {
-    if (counter >= 6) {
-      // btnDecRef.current.disabled = false;
-      // btnIncRef.current.disabled = false;
-      console.log("good" + User);
-    }
-  }, [counter]);
 
   //increase counter
 
@@ -40,25 +28,7 @@ const DropdownVoyger = () => {
         >
           -
         </button>
-        <span>
-          {Users === "Adulte" ? (
-            <input
-              type={"number"}
-              defaultValue="1"
-              width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
-              value={counter + 1}
-            />
-          ) : (
-            <input
-              type={"number"}
-              defaultValue="0"
-              className="w-[30px] bg-[#fff]"
-              value={counter}
-            />
-          )}
-        </span>
+        <span>{Users === "Adulte" ? counter + 1 : counter}</span>
         <button
           className="bg-[#f4f1f7] rounded-[50%] w-5"
           ref={btnIncRef}
@@ -104,12 +74,20 @@ const DropdownVoyger = () => {
             </>
           ),
           icon: <UserOutlined className=" !text-[#4a20aa]" />,
-          key: "1",
+          key: "0",
         },
       ]}
     />
   );
-
+  // const btnDecRef = useRef(null);
+  // const btnIncRef = useRef(null);
+  // // Counter floor when the length is 6 Adulte or 4 enfant
+  // useEffect(() => {
+  //   if (counter === 6) {
+  //     btnDecRef.current.disabled = true;
+  //     btnIncRef.current.disabled = true;
+  //   }
+  // }, [counter]);
   return (
     <Dropdown
       id="dropMenu"

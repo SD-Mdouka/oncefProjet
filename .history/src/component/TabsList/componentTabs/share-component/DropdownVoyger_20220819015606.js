@@ -46,8 +46,6 @@ const DropdownVoyger = () => {
               type={"number"}
               defaultValue="1"
               width={20}
-              multiple={false}
-              className="w-[30px] bg-[#fff]"
               value={counter + 1}
             />
           ) : (
