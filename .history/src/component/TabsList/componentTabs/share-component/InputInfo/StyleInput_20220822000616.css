@@ -211,42 +211,12 @@
 
 /* style Model view date */
 
-.ant-modal {
-    border-radius: 12px;
-    margin: 10px auto !important;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
 .ant-modal-title {
-    color: #4a20aa !important;
-    font-size: 24px !important;
-}
-
-.ant-modal-header {
-    padding: 28px 30px !important;
-    background-color: #fff !important;
-    border-radius: 43px 43px 0 0 !important;
-}
-
-.ant-modal-content {
-    background-color: transparent !important;
-}
-
-.ant-modal-body {
-    background: #fff !important;
-}
-
-.ant-modal-footer {
-    padding: 21px 31px !important;
-    background: #fff !important;
-    border-radius: 0px 0px 40px 40px !important;
-    -webkit-border-radius: 0px 0px 40px 40px !important;
-    -moz-border-radius: 0px 0px 40px 40px !important;
-    -ms-border-radius: 0px 0px 40px 40px !important;
-    -o-border-radius: 0px 0px 40px 40px !important;
+    color: #4a20aa;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    word-wrap: break-word;
 }
 
 

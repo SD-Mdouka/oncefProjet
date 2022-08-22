@@ -145,5 +145,5 @@ const DropdownVoyger = () => {
     </Dropdown>
   );
 };
-
-export default DropdownVoyger;
+export const counterAdulte = "";
+export default DropdownVoyger = counterAdulte();

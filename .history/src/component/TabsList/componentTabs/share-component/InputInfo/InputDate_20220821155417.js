@@ -1,13 +1,13 @@
-import { Button, Modal } from "antd";
-import { useState } from "react";
-import { Calendar } from "react-calendar";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import "./StyleInput.css";
+import { Button, Modal } from 'antd';
+import { useState } from 'react';
+import { Calendar } from 'react-calendar';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import './StyleInput.css';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [SelectedDate, setSelectedDate] = useState(null);
+  const [modalText, setModalText] = useState('Content of the modal');
 
   const showModal = () => {
     setVisible(true);
@@ -22,33 +22,34 @@ const App = () => {
   };
 
   const handleCancel = () => {
-    console.log("Clicked cancel button");
+    console.log('Clicked cancel button');
     setVisible(false);
   };
 
   return (
-    <div id="inputDate">
+    <div id='inputDate'>
       <Button
-        className="InputStyle inputInside !text-left "
+        className='InputStyle inputInside !text-left '
         onClick={showModal}
       >
-        <CalendarMonthIcon className="mr-3 mb-1" /> 15/08/2022
+        <CalendarMonthIcon className='mr-3 mb-1' /> 15/08/2022
       </Button>
       <Modal
-        title="Mon départ :"
+        title='Mon départ :'
         visible={visible}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
-        className="!rounded-[15px]"
+        className='!rounded-[15px]'
       >
-        <div className="flex flex-row ">
+        <div className='flex flex-row '>
           <Calendar
-            onChange={(value) => setSelectedDate(value)}
-            defaultValue={new Date("22/08/2022")}
+            //   onChange={(value) => setSelectedDate(value)}
+            //   defaultValue={defaultDate}
+            //   value={selectedDate}
             minDate={new Date()}
-            defaultView="month"
-            locale="fr"
+            defaultView='month'
+            locale='fr'
             showDoubleView={false}
             next2Label={false}
             prev2Label={false}

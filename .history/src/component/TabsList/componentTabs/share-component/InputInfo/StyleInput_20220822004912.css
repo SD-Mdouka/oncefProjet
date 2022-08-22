@@ -226,27 +226,9 @@
 }
 
 .ant-modal-header {
-    padding: 28px 30px !important;
-    background-color: #fff !important;
-    border-radius: 43px 43px 0 0 !important;
-}
-
-.ant-modal-content {
+    padding: 16px 24px;
     background-color: transparent !important;
-}
-
-.ant-modal-body {
-    background: #fff !important;
-}
-
-.ant-modal-footer {
-    padding: 21px 31px !important;
-    background: #fff !important;
-    border-radius: 0px 0px 40px 40px !important;
-    -webkit-border-radius: 0px 0px 40px 40px !important;
-    -moz-border-radius: 0px 0px 40px 40px !important;
-    -ms-border-radius: 0px 0px 40px 40px !important;
-    -o-border-radius: 0px 0px 40px 40px !important;
+    border-radius: 2px 2px 20px 19px !important;
 }
 
 

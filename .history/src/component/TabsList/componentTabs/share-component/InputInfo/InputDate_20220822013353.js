@@ -7,7 +7,7 @@ import "./StyleInput.css";
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [SelectedDate, setSelectedDate] = useState(null);
+  const [SelectedDate, setSelectedDate] = useState(0);
 
   const showModal = () => {
     setVisible(true);

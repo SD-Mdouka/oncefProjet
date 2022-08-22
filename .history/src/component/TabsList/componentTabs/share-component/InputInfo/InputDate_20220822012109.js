@@ -7,7 +7,7 @@ import "./StyleInput.css";
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [SelectedDate, setSelectedDate] = useState(null);
+  const [modalText, setModalText] = useState("Content of the modal");
 
   const showModal = () => {
     setVisible(true);
@@ -44,14 +44,16 @@ const App = () => {
       >
         <div className="flex flex-row ">
           <Calendar
-            onChange={(value) => setSelectedDate(value)}
-            defaultValue={new Date("22/08/2022")}
+            //   onChange={(value) => setSelectedDate(value)}
+            //   defaultValue={defaultDate}
+            //   value={selectedDate}
             minDate={new Date()}
             defaultView="month"
             locale="fr"
             showDoubleView={false}
             next2Label={false}
             prev2Label={false}
+            formatShortWeekday="yyyy"
           />
         </div>
       </Modal>

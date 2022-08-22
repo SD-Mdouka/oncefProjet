@@ -145,5 +145,3 @@ const DropdownVoyger = () => {
     </Dropdown>
   );
 };
-
-export default DropdownVoyger;

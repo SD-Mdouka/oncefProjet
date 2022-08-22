@@ -239,16 +239,6 @@
     background: #fff !important;
 }
 
-.ant-modal-footer {
-    padding: 21px 31px !important;
-    background: #fff !important;
-    border-radius: 0px 0px 40px 40px !important;
-    -webkit-border-radius: 0px 0px 40px 40px !important;
-    -moz-border-radius: 0px 0px 40px 40px !important;
-    -ms-border-radius: 0px 0px 40px 40px !important;
-    -o-border-radius: 0px 0px 40px 40px !important;
-}
-
 
 /* calender container style */
 
