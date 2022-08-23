@@ -12,10 +12,14 @@ code {
     font-family: "EncodeSansExpanded SemiBold", sans-serif !important;
 }
 
-.b_homeBanner {
-    background: #6a0dad !important;
+.ant-layout-content {
+    -ms-flex: auto !important;
+    flex: auto !important;
+    min-height: 0 !important;
 }
 
-.ant-row {
-    display: none !important;
+.b_homeBanner {
+    position: relative !important;
+    height: auto !important;
+    background: #6a0dad !important;
 }

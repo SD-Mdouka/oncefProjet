@@ -45,6 +45,7 @@ const App = () => {
         <div className="flex flex-row ">
           <Calendar
             onChange={(value) => setSelectedDate(value)}
+            defaultValue={new Date("22/08/2022")}
             minDate={new Date()}
             defaultView="month"
             locale="fr"

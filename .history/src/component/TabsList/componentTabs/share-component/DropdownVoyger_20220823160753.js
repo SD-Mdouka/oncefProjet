@@ -132,13 +132,15 @@ const DropdownVoyger = () => {
             borderColor: "#bda7ef",
             color: "#4a20aa",
             lineHeight: "2px",
+            letterSpacing: "1px",
           }}
         >
           <Space>
             <UserOutlined />
             {counterAdulte === 0
-              ? ` ${counterAdulte + 1}  Adulte(s)`
-              : ` ${counterAdulte} Adulte(s)`}
+              ? ` ${counterAdulte + 1 }  Adulte(s)`
+              : `, ${counterAdulte} Adulte(s)`
+           
             {counterKids > 0 && `, ${counterKids} Enfant(s)`}
           </Space>
         </span>

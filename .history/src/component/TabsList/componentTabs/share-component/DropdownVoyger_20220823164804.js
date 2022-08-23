@@ -134,8 +134,8 @@ const DropdownVoyger = () => {
             lineHeight: "2px",
           }}
         >
+          <UserOutlined />
           <Space>
-            <UserOutlined />
             {counterAdulte === 0
               ? ` ${counterAdulte + 1}  Adulte(s)`
               : ` ${counterAdulte} Adulte(s)`}

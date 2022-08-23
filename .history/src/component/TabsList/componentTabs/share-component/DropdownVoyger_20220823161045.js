@@ -132,6 +132,7 @@ const DropdownVoyger = () => {
             borderColor: "#bda7ef",
             color: "#4a20aa",
             lineHeight: "2px",
+            letterSpacing: "1px",
           }}
         >
           <Space>
