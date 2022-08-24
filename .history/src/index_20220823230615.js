@@ -3,19 +3,51 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./AppRoute/App";
 import reportWebVitals from "./reportWebVitals";
-import counterReducer from "./redux/reducer";
-import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 //STORE (state)
 
-let store = createStore(counterReducer);
+//ACTION
+const increment = () => {
+  return {
+    type: "INC",
+    data: 1,
+  };
+};
+
+const deccrement = () => {
+  return {
+    type: "DEC",
+    data: 2,
+  };
+};
+
+//REDUCER
+const counter = (state = 0, action) => {
+  switch (action.type) {
+    case "INC":
+      return state + action.data;
+    case "INC":
+      return state - action.data;
+    default:
+      return state;
+  }
+};
+
+let store = createStore(counter);
+
+store.subscribe(() => console.log(store.getState()));
+
+//DISPATCH
+
+store.dispatch(increment());
+store.dispatch(deccrement());
+store.dispatch(increment());
+store.dispatch(deccrement());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Provider store={store}>
-    </Provider> */}
     <App />
   </React.StrictMode>
 );

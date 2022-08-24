@@ -17,7 +17,7 @@ export default function InputGare({ placeHolder }) {
       </div>
       <Autocomplete
         disablePortal
-        inputFocused={false}
+        inputFocused={true}
         className='flex relative'
         sx={{ width: 300 }}
         options={Gare.gare}

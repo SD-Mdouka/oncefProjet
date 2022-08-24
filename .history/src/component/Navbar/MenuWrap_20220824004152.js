@@ -100,7 +100,7 @@ const BurgerMenu = () => {
             </p>
           </div>
           <div className="list_item_container">
-            <div className="sc-fONwsr bcdkPp">
+            <div class="sc-fONwsr bcdkPp">
               <a href="/carte-jeune">Cartes de réduction</a>
             </div>
           </div>

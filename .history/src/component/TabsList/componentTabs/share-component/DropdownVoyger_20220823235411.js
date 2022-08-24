@@ -5,6 +5,7 @@ import { Dropdown, Menu, Space } from "antd";
 import { useSelector } from "react-redux";
 
 const DropdownVoyger = () => {
+  const counter = useSelector((state) => state.count);
   const [counterAdulte, setCounterAdulte] = useState(0);
   const [counterKids, setCounterKids] = useState(0);
 
@@ -94,8 +95,7 @@ const DropdownVoyger = () => {
                   Adulte (s) <small>&gt; 15 ans</small>
                 </span>
                 <span className="!float-right">
-                  {countersAdulte()}
-                  {/* {counter} */}
+                  {countersAdulte()} {counter}
                 </span>
               </div>
             </>

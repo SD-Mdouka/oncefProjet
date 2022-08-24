@@ -3,19 +3,28 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./AppRoute/App";
 import reportWebVitals from "./reportWebVitals";
-import counterReducer from "./redux/reducer";
-import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 //STORE (state)
 
-let store = createStore(counterReducer);
+
+
+
+
+let store = createStore(counter);
+
+store.subscribe(() => console.log(store.getState()));
+
+//DISPATCH
+
+store.dispatch(increment());
+store.dispatch(deccrement());
+store.dispatch(increment());
+store.dispatch(increment());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Provider store={store}>
-    </Provider> */}
     <App />
   </React.StrictMode>
 );

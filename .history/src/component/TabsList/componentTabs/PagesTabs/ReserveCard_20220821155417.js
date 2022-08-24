@@ -12,7 +12,7 @@ import DropdownVoyger from '../share-component/DropdownVoyger';
 import InputDate from '../share-component/InputInfo/InputDate';
 const ReserveCard = () => {
   return (
-    <div id='ReserveCard' className='ant-row'>
+    <div id='ReserveCard' classNameName='ant-row'>
       <div className='!pl-0 !pr-0'>
         <div className='!pl-[12px] !pr-[12px] AdvancedSearchWidget_auth--conventionne'>
           <div className='relative h-auto zoom-1 block -ml-[12px] -mr-[12px]'>

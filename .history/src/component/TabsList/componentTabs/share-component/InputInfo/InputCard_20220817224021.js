@@ -6,14 +6,13 @@ import './StyleInput.css';
 
 export default function InputCard() {
   return (
-    <div id="inputCard">
+    <div id='inputCard'>
       <Autocomplete
         disablePortal
-        inputFocused={false}
         options={cardReduit.cardReduit}
         sx={{ width: 300 }}
         renderInput={(params) => (
-          <TextField className="inputInside" {...params} label="Choisir" />
+          <TextField className='inputInside' {...params} label='Choisir' />
         )}
       />
     </div>
