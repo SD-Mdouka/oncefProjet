@@ -129,3 +129,75 @@
     display: block;
     color: #bdc3c7;
 }
+
+
+/*toogle items*/
+
+
+/* style the component container */
+
+#MenuContent .accordion_container {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 290px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+/* style the title button of the accordion menu */
+
+#MenuContent .accordion_title {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+#MenuContent .accordion_content {
+    height: 0px;
+    transition: height 0.3s ease-in;
+    -webkit-transition: height 0.3s ease-in;
+    -moz-transition: height 0.3s ease-in;
+    -ms-transition: height 0.3s ease-in;
+    -o-transition: height 0.3s ease-in;
+}
+
+
+/*  
+The .show_content class is added and removed from the accordion_content div in the JSX to achieve the show and hide effect for the content when the accordion is clicked.
+*/
+
+#MenuContent .show_content {
+    height: 190px;
+    opacity: 1;
+    visibility: visible;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -ms-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+}
+
+
+/* Style the list item container divs */
+
+#MenuContent .list_item_container {
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+

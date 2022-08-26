@@ -20,7 +20,8 @@ const NavBar = () => {
   return (
     <div id="Menu" className="vente-navbar-container">
       <div className="menuList">
-        <MenuWrap />
+        {/* <MenuWrap /> */}
+        <MenuItem />
         <div className="app-header-container">
           <div className="IconMenu">
             <a href="/">

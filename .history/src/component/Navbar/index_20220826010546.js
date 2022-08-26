@@ -21,6 +21,7 @@ const NavBar = () => {
     <div id="Menu" className="vente-navbar-container">
       <div className="menuList">
         <MenuWrap />
+        {/* <MenuItem /> */}
         <div className="app-header-container">
           <div className="IconMenu">
             <a href="/">
