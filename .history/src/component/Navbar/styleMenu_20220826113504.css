@@ -63,7 +63,7 @@ header .box-title {
 
 .box-content {
     width: calc(100% - 40px);
-    padding: 10px;
+    padding: 30px 20px;
     font-size: 11pt;
     color: #fff;
     display: none;
@@ -107,9 +107,8 @@ input:checked+.box .box-close {
 .arrows section .box-title:after {
     position: absolute;
     display: block;
-    content: "\203a";
     font-size: 18pt;
-    left: 250px;
+    left: 20px;
     top: -2px;
     transition: transform 0.15s ease-in-out;
     color: #fff;

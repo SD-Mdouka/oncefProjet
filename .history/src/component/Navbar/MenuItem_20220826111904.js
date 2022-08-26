@@ -100,7 +100,10 @@ const MenuItem = () => {
               <label className="box-close !text-[#fff]" for="acc-close"></label>
               {items.Item.map((item) => {
                 return (
-                  <div className="box-content">
+                  <div
+                    className="box-content 
+                  "
+                  >
                     <p>
                       <a className="!text-[#fff]" href={item.url}>
                         {item.name}
@@ -109,11 +112,11 @@ const MenuItem = () => {
                   </div>
                 );
               })}
-              <input type="radio" name="accordion" id="acc-close" />
             </section>
           </nav>
         );
       })}
+      <input type="radio" name="accordion" id="acc-close" />
     </div>
   );
 };

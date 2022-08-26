@@ -97,7 +97,7 @@ const MenuItem = () => {
               <label className="box-title text-[#fff]" for={items.id}>
                 {items.title}
               </label>
-              <label className="box-close !text-[#fff]" for="acc-close"></label>
+
               {items.Item.map((item) => {
                 return (
                   <div className="box-content">

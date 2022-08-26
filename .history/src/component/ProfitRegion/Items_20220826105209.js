@@ -10,7 +10,7 @@ const Items = ({ nameVoyage }) => {
     setContentVisible((prevState) => !prevState);
   };
   return (
-    <div id="contentItem">
+    <div id="content">
       <div className="accordion_container">
         <div className="accordion styleContent ">
           {/* when button clicked, toggle the contentVisible value in our state*/}

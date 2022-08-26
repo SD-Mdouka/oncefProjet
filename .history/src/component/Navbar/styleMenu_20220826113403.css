@@ -63,7 +63,7 @@ header .box-title {
 
 .box-content {
     width: calc(100% - 40px);
-    padding: 10px;
+    padding: 30px 20px;
     font-size: 11pt;
     color: #fff;
     display: none;
@@ -109,7 +109,7 @@ input:checked+.box .box-close {
     display: block;
     content: "\203a";
     font-size: 18pt;
-    left: 250px;
+    left: 20px;
     top: -2px;
     transition: transform 0.15s ease-in-out;
     color: #fff;
@@ -120,9 +120,9 @@ input:checked+.box .box-close {
 }
 
 input:checked+section.box .box-title:after {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    transform: -rotate(90deg);
+    -webkit-transform: -rotate(90deg);
+    -moz-transform: -rotate(90deg);
+    -ms-transform: -rotate(90deg);
+    -o-transform: -rotate(90deg);
 }

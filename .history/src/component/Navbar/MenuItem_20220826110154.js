@@ -89,6 +89,7 @@ const ListItemMenu = [
 const MenuItem = () => {
   return (
     <div id="MenuContent">
+      <input type="radio" name="accordion" id="id" />
       {ListItemMenu.map((items) => {
         return (
           <nav className="accordion arrows ">
@@ -100,7 +101,10 @@ const MenuItem = () => {
               <label className="box-close !text-[#fff]" for="acc-close"></label>
               {items.Item.map((item) => {
                 return (
-                  <div className="box-content">
+                  <div
+                    className="box-content 
+                  "
+                  >
                     <p>
                       <a className="!text-[#fff]" href={item.url}>
                         {item.name}
@@ -109,11 +113,12 @@ const MenuItem = () => {
                   </div>
                 );
               })}
-              <input type="radio" name="accordion" id="acc-close" />
             </section>
+            <input type="radio" name="accordion" id="acc-close" />
           </nav>
         );
       })}
+      <input type="radio" name="accordion" id="acc-close" />
     </div>
   );
 };

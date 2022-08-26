@@ -109,7 +109,6 @@ const MenuItem = () => {
                   </div>
                 );
               })}
-              <input type="radio" name="accordion" id="acc-close" />
             </section>
           </nav>
         );

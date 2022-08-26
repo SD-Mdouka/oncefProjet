@@ -138,7 +138,7 @@
     background-color: transparent;
 }
 
-#contentItem .text-new {
+#c ontent .text-new {
     color: rgb(57, 230, 182);
     font-family: "Encode Sans Expanded";
     font-size: 25px;
@@ -177,7 +177,7 @@ The .show_content class is added and removed from the accordion_content div in t
 
 /*  Style the list item container divs */
 
-#contentItem .list_item_container {
+#c ontent .list_item_container {
     width: 100%;
     height: 50px;
     padding-left: 15px;
@@ -213,7 +213,7 @@ The .show_content class is added and removed from the accordion_content div in t
 
 /*  Style the list items p text */
 
-#contentItem .btnLink:hover div {
+#c ontent .btnLink:hover div {
     color: #40a9ff;
 }
 
@@ -244,7 +244,7 @@ The .show_content class is added and removed from the accordion_content div in t
     margin-top: 3px;
 }
 
-#contentItem .StyleVille {
+#c ontent .StyleVille {
     color: rgb(255, 255, 255);
     font-family: "Encode Sans Expanded";
     font-size: 15px;

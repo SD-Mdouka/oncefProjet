@@ -11,7 +11,7 @@
     width: 100%;
     top: 0px;
     left: 0px;
-    background-image: url("https://www.oncf-voyages.ma/static/media/cercle.21d3ee34.svg");
+    background-image: url("https://www.oncf-voyages.ma/static/media/cercle.21d3ee34.svg"), url("https://www.oncf-voyages.ma/static/media/cercle.21d3ee34.svg");
     background-size: 301px 301px, 500px 500px;
     background-position: -191px 350px, calc(100% + 330px) -50px;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 
 /* style the component container */
 
-#contentItem .styleContent {
+#content .styleContent {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -72,7 +72,7 @@
     -o-border-radius: 30px;
 }
 
-#contentItem .accordion_container {
+#content .accordion_container {
     width: 480px;
     background-color: rgb(67, 28, 156);
     border-radius: 30px;
@@ -84,7 +84,7 @@
     -o-border-radius: 30px;
 }
 
-#contentItem .btn-new {
+#content .btn-new {
     height: 100%;
     display: flex;
     -webkit-box-pack: center;
@@ -99,13 +99,13 @@
     -o-transition: all 0.2s ease-in-out 0s;
 }
 
-#contentItem .plus {
+#content .plus {
     opacity: 1;
     right: 0px;
     margin-top: 4px;
 }
 
-#contentItem .plusBtn {
+#content .plusBtn {
     position: absolute;
     transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s ease-in-out 0s;
@@ -114,7 +114,7 @@
     -o-transition: all 0.2s ease-in-out 0s;
 }
 
-#contentItem.minus {
+#content.minus {
     opacity: 0;
     right: 0px;
     margin-top: -3px;
@@ -123,7 +123,7 @@
 
 /* style the title button of the accordion menu */
 
-#contentItem .accordion_title {
+#content .accordion_title {
     width: 100%;
     height: 50px;
     border: none;
@@ -138,7 +138,7 @@
     background-color: transparent;
 }
 
-#contentItem .text-new {
+#content .text-new {
     color: rgb(57, 230, 182);
     font-family: "Encode Sans Expanded";
     font-size: 25px;
@@ -148,7 +148,7 @@
     position: relative;
 }
 
-#contentItem .accordion_content {
+#content .accordion_content {
     height: 0px;
     padding: 30px;
     transition: height 0.3s ease-in;
@@ -163,8 +163,8 @@
 The .show_content class is added and removed from the accordion_content div in the JSX to achieve the show and hide effect for the content when the accordion is clicked.
 */
 
-#contentItem .show_content {
-    height: 230px;
+#content .show_content {
+    height: 200px;
     opacity: 1;
     visibility: visible;
     transition: height 0.3s ease-out;
@@ -175,9 +175,9 @@ The .show_content class is added and removed from the accordion_content div in t
 }
 
 
-/*  Style the list item container divs */
+/* Style the list item container divs */
 
-#contentItem .list_item_container {
+#content .list_item_container {
     width: 100%;
     height: 50px;
     padding-left: 15px;
@@ -190,14 +190,14 @@ The .show_content class is added and removed from the accordion_content div in t
 
 /* Style the first lit item top border, makes the title look encloses without overlapping borders when the accordion is closed */
 
-#contentItem .accordion_content .list_item_container:first-of-type {
+#content .accordion_content .list_item_container:first-of-type {
     border-top: 3px solid black;
 }
 
 
 /* Style the list items p text */
 
-#contentItem .list_item_container p {
+#content .list_item_container p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -206,18 +206,18 @@ The .show_content class is added and removed from the accordion_content div in t
 
 /* Style list_item text when list_item_container is hovered */
 
-#contentItem .list_item_container:hover>p {
+#content .list_item_container:hover>p {
     color: #fff;
 }
 
 
-/*  Style the list items p text */
+/* Style the list items p text */
 
-#contentItem .btnLink:hover div {
+.btnLink:hover div {
     color: #40a9ff;
 }
 
-#contentItem .btnLink {
+.btnLink {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -226,7 +226,7 @@ The .show_content class is added and removed from the accordion_content div in t
     border: none;
 }
 
-#contentItem .styleBtnLink {
+.styleBtnLink {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -234,17 +234,17 @@ The .show_content class is added and removed from the accordion_content div in t
     padding-right: 10px;
 }
 
-#contentItem .PartierTotal {
+.PartierTotal {
     display: flex;
     flex-shrink: 0;
 }
 
-#contentItem .Link {
+.Link {
     margin-right: 9px;
     margin-top: 3px;
 }
 
-#contentItem .StyleVille {
+.StyleVille {
     color: rgb(255, 255, 255);
     font-family: "Encode Sans Expanded";
     font-size: 15px;
@@ -257,27 +257,28 @@ The .show_content class is added and removed from the accordion_content div in t
     -o-transition: all 0.2s ease-in-out 0s;
 }
 
-#contentItem .Partier {
+.Partier {
     color: rgb(255, 255, 255);
     font-family: "Encode Sans Expanded";
     font-size: 12px;
-    letter-spacing: 0.1px !important;
-    line-height: 15px !important;
-    margin-right: 8px !important;
-    margin-top: 7px !important;
-    transition: all 0.2s ease-in-out 0s !important;
-    -webkit-transition: all 0.2s ease-in-out 0s !important;
-    -moz-transition: all 0.2s ease-in-out 0s !important;
-    -ms-transition: all 0.2s ease-in-out 0s !important;
-    -o-transition: all 0.2s ease-in-out 0s !important;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    margin-right: 8px;
+    margin-top: 7px;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
 }
 
-#contentItem .Total {
+.Total {
     color: rgb(255, 255, 255);
     font-family: "Encode Sans Expanded";
     font-size: 20px;
+    font-weight: bold;
     letter-spacing: 0.09px;
-    line-height: 33px !important;
+    line-height: 25px !important;
     transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;

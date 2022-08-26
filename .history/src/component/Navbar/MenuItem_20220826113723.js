@@ -92,7 +92,6 @@ const MenuItem = () => {
       {ListItemMenu.map((items) => {
         return (
           <nav className="accordion arrows ">
-            <input type="radio" name="accordion" id={items.id} />
             <section className="box">
               <label className="box-title text-[#fff]" for={items.id}>
                 {items.title}
@@ -111,6 +110,7 @@ const MenuItem = () => {
               })}
               <input type="radio" name="accordion" id="acc-close" />
             </section>
+            <input type="radio" name="accordion" id={items.id} />
           </nav>
         );
       })}
