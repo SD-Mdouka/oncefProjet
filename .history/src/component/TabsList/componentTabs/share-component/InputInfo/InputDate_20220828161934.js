@@ -2,7 +2,6 @@ import { Button, Modal, Input } from "antd";
 import { useState } from "react";
 import { Calendar } from "react-calendar";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import moment from "moment";
 import "./StyleInput.css";
 
 const InputDate = ({ value, allowClear }) => {
@@ -36,11 +35,7 @@ const InputDate = ({ value, allowClear }) => {
           className="!text-[14px] !text-white !text-[] !bg-transparent "
           style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
           allowClear={allowClear}
-          value={
-            new Date(SelectedDate).getFullYear() +
-            "/" +
-            new Date(SelectedDate).getDate()
-          }
+          defaultValue={value}
           onClick={showModal}
           placeholder="Mon retour"
         />
@@ -72,6 +67,7 @@ const InputDate = ({ value, allowClear }) => {
             minDate={new Date()}
             defaultView="month"
             locale="fr"
+            defaultValue={SelectedDate}
             showDoubleView={false}
             next2Label={false}
             prev2Label={false}

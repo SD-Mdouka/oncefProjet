@@ -36,11 +36,8 @@ const InputDate = ({ value, allowClear }) => {
           className="!text-[14px] !text-white !text-[] !bg-transparent "
           style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
           allowClear={allowClear}
-          value={
-            new Date(SelectedDate).getFullYear() +
-            "/" +
-            new Date(SelectedDate).getDate()
-          }
+          value={moment(new Date(SelectedDate))}
+          format="DD MMMM YYYY"
           onClick={showModal}
           placeholder="Mon retour"
         />
