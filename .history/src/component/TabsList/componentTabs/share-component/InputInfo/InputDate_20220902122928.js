@@ -87,35 +87,11 @@ const InputDate = ({ valueText, allowClear }) => {
           />
         </div>
         <div className="bg-[#fff]">
-          <Radio.Group onChange={onChange} defaultValue="a">
-            <Radio.Button value="a">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Nuit<span>00h - 06h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="b">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Matinée<span>06h - 12h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="c">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Après-midi<span>12h - 19h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="d">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Soir<span>19h - 00h</span>
-                </span>
-              </span>
-            </Radio.Button>
+          <Radio.Group className="!m-auto" onChange={onChange} defaultValue="a">
+            <Radio.Button value="a">Hangzhou</Radio.Button>
+            <Radio.Button value="b">Shanghai</Radio.Button>
+            <Radio.Button value="c">Beijing</Radio.Button>
+            <Radio.Button value="d">Chengdu</Radio.Button>
           </Radio.Group>
         </div>
       </Modal>

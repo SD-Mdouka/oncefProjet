@@ -351,6 +351,7 @@ abbr {
     text-decoration: none !important;
     cursor: pointer !important;
     font-weight: 600 !important;
+    line-height: 10px !important;
     font-size: 14px !important;
     text-transform: capitalize;
     font-style: normal !important;
@@ -371,7 +372,7 @@ abbr {
 }
 
 .react-calendar__month-view__days .react-calendar__tile {
-    padding: 10px 0;
+    padding: 15px 0;
     color: #4a20aa;
 }
 
@@ -381,35 +382,24 @@ abbr {
 .react-calendar__month-view__days .react-calendar__tile:enabled {
     flex: 0 0 10.2857% !important;
     border-radius: 100%;
+    margin-left: 4px !important;
+    margin-right: 14px !important;
     transition: 0.4s !important;
     transition-delay: 0.2s;
     transition-duration: 0.3s !important;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    -webkit-transition: 0.4s !important;
-    -moz-transition: 0.4s !important;
-    -ms-transition: 0.4s !important;
-    -o-transition: 0.4s !important;
 }
 
 
 /*  enabled days on hover */
 
-.react-calendar__month-view__days .react-calendar__tile:enabled {
-    margin-inline: auto;
-}
-
 .react-calendar__month-view__days .react-calendar__tile:enabled:hover {
     flex: 0 0 10.2857% !important;
     background-color: #62c247 !important;
     color: white !important;
+    padding: 5px !important;
+    margin-left: 4px !important;
+    margin-right: 10px !important;
     border-radius: 100% !important;
-    -webkit-border-radius: 100% !important;
-    -moz-border-radius: 100% !important;
-    -ms-border-radius: 100% !important;
-    -o-border-radius: 100% !important;
 }
 
 
@@ -419,6 +409,9 @@ abbr {
     flex: 0 0 10.2857% !important;
     background-color: #62c247 !important;
     color: white !important;
+    padding: 5px !important;
+    margin-left: 4px !important;
+    margin-right: 10px !important;
     border-radius: 100% !important;
 }
 
@@ -429,6 +422,9 @@ abbr {
     flex: 0 0 10.2857% !important;
     background-color: #62c247 !important;
     color: white !important;
+    padding: 5px !important;
+    margin-left: 4px !important;
+    margin-right: 10px !important;
     border-radius: 100%;
 }
 

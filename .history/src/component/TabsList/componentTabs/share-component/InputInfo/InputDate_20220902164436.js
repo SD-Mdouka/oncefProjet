@@ -2,7 +2,7 @@ import { Button, Modal, Input } from "antd";
 import { useState } from "react";
 import { Radio } from "antd";
 import { Calendar } from "react-calendar";
-
+import { CalendarComponent } from "@syncfusion/ej2-react-calendars";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "./StyleInput.css";
 
@@ -74,7 +74,7 @@ const InputDate = ({ valueText, allowClear }) => {
         ]}
       >
         <div className="flex flex-row bg-[#fff]">
-          <Calendar
+          {/* <Calendar
             onClickDay={(value) => {
               setSelectedDate(value);
             }}
@@ -84,7 +84,8 @@ const InputDate = ({ valueText, allowClear }) => {
             showDoubleView={false}
             next2Label={false}
             prev2Label={false}
-          />
+          /> */}
+          <CalendarComponent id="calendar" />
         </div>
         <div className="bg-[#fff]">
           <Radio.Group onChange={onChange} defaultValue="a">

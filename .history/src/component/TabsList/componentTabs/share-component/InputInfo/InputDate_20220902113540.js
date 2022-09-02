@@ -1,8 +1,6 @@
 import { Button, Modal, Input } from "antd";
-import { useState } from "react";
-import { Radio } from "antd";
+import { useState, useEffect, useRef } from "react";
 import { Calendar } from "react-calendar";
-
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "./StyleInput.css";
 
@@ -31,9 +29,6 @@ const InputDate = ({ valueText, allowClear }) => {
   const handleCancel = () => {
     console.log("Clicked cancel button");
     setVisible(false);
-  };
-  const onChange = (e) => {
-    console.log(`radio checked:${e.target.value}`);
   };
 
   return (
@@ -85,38 +80,6 @@ const InputDate = ({ valueText, allowClear }) => {
             next2Label={false}
             prev2Label={false}
           />
-        </div>
-        <div className="bg-[#fff]">
-          <Radio.Group onChange={onChange} defaultValue="a">
-            <Radio.Button value="a">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Nuit<span>00h - 06h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="b">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Matinée<span>06h - 12h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="c">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Après-midi<span>12h - 19h</span>
-                </span>
-              </span>
-            </Radio.Button>
-            <Radio.Button value="d">
-              <span className="groupRadio">
-                <span className="calendarTime">
-                  Soir<span>19h - 00h</span>
-                </span>
-              </span>
-            </Radio.Button>
-          </Radio.Group>
         </div>
       </Modal>
     </div>

@@ -398,7 +398,7 @@ abbr {
 /*  enabled days on hover */
 
 .react-calendar__month-view__days .react-calendar__tile:enabled {
-    margin-inline: auto;
+    flex: 0 0 12.2857% !important;
 }
 
 .react-calendar__month-view__days .react-calendar__tile:enabled:hover {

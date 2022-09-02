@@ -91,14 +91,14 @@ const InputDate = ({ valueText, allowClear }) => {
             <Radio.Button value="a">
               <span className="groupRadio">
                 <span className="calendarTime">
-                  Nuit<span>00h - 06h</span>
+                  Après-midi<span>12h - 19h</span>
                 </span>
               </span>
             </Radio.Button>
             <Radio.Button value="b">
               <span className="groupRadio">
                 <span className="calendarTime">
-                  Matinée<span>06h - 12h</span>
+                  Après-midi<span>12h - 19h</span>
                 </span>
               </span>
             </Radio.Button>
@@ -112,7 +112,7 @@ const InputDate = ({ valueText, allowClear }) => {
             <Radio.Button value="d">
               <span className="groupRadio">
                 <span className="calendarTime">
-                  Soir<span>19h - 00h</span>
+                  Après-midi<span>12h - 19h</span>
                 </span>
               </span>
             </Radio.Button>
