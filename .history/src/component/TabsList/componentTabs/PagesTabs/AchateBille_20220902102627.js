@@ -9,8 +9,6 @@ import DropdownVoyger from "../share-component/DropdownVoyger";
 import InputDate from "../share-component/InputInfo/InputDate";
 
 const date = new Date();
-const ValueDate =
-  date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
 
 const AchateBille = ({
   counterAdulte,
@@ -44,7 +42,7 @@ const AchateBille = ({
       <div className="childAdresse flex-col space-x-1">
         <div className="textfield">
           <Label text={"Ma date de départ"} classes="labelfieild" />
-          <InputDate valueText={ValueDate} />
+          <InputDate valueText={date} />
         </div>
         <div className="textfield mt-[54px]">
           <Label text={"Ma date de retour"} classes="labelfieild" />

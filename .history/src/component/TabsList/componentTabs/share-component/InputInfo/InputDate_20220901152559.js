@@ -1,14 +1,14 @@
 import { Button, Modal, Input } from "antd";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Calendar } from "react-calendar";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import moment from "moment";
 import "./StyleInput.css";
 
 const InputDate = ({ valueText, allowClear }) => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [SelectedDate, setSelectedDate] = useState(null);
-
   const date = new Date(SelectedDate);
   const ValueDate =
     date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
@@ -19,7 +19,6 @@ const InputDate = ({ valueText, allowClear }) => {
 
   const handleOk = () => {
     setConfirmLoading(true);
-    console.log(ValueDate + "-");
     setTimeout(() => {
       setVisible(false);
       setConfirmLoading(false);
@@ -35,16 +34,26 @@ const InputDate = ({ valueText, allowClear }) => {
     <div id="inputDate">
       <div className="flex justify-start InputStyle inputInside">
         <CalendarMonthIcon className="-ml-2" />
-        <Input
-          bordered={false}
-          className="!text-[14px] !text-white !text-[] !bg-transparent "
-          style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
-          allowClear={allowClear}
-          defaultValue={valueText}
-          onClick={showModal}
-          placeholder="Mon retour"
-          // value={ValueDate}
-        />
+        {valueText === "" ? (
+          <Input
+            bordered={false}
+            className="!text-[14px] !text-white !text-[] !bg-transparent "
+            style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
+            allowClear={allowClear}
+            value={ValueDate}
+            onClick={showModal}
+            placeholder="Mon retour"
+          />
+        ) : (
+          <input
+            bordered={false}
+            className="!text-[14px] !text-white !text-[] !bg-transparent "
+            style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
+            value={valueText}
+            onClick={showModal}
+            placeholder="Mon retour"
+          />
+        )}
       </div>
       <Modal
         title="Mon départ :"

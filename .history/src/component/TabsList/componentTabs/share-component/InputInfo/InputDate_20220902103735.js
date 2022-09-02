@@ -8,7 +8,6 @@ const InputDate = ({ valueText, allowClear }) => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [SelectedDate, setSelectedDate] = useState(null);
-
   const date = new Date(SelectedDate);
   const ValueDate =
     date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
@@ -36,6 +35,7 @@ const InputDate = ({ valueText, allowClear }) => {
       <div className="flex justify-start InputStyle inputInside">
         <CalendarMonthIcon className="-ml-2" />
         <Input
+          ref={inputRef}
           bordered={false}
           className="!text-[14px] !text-white !text-[] !bg-transparent "
           style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
@@ -43,7 +43,7 @@ const InputDate = ({ valueText, allowClear }) => {
           defaultValue={valueText}
           onClick={showModal}
           placeholder="Mon retour"
-          // value={ValueDate}
+          value={ValueDate}
         />
       </div>
       <Modal

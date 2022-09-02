@@ -5,10 +5,12 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "./StyleInput.css";
 
 const InputDate = ({ valueText, allowClear }) => {
+  // useEffect({
+
+  // }, []);
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [SelectedDate, setSelectedDate] = useState(null);
-
   const date = new Date(SelectedDate);
   const ValueDate =
     date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
@@ -19,7 +21,6 @@ const InputDate = ({ valueText, allowClear }) => {
 
   const handleOk = () => {
     setConfirmLoading(true);
-    console.log(ValueDate + "-");
     setTimeout(() => {
       setVisible(false);
       setConfirmLoading(false);
@@ -41,9 +42,9 @@ const InputDate = ({ valueText, allowClear }) => {
           style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
           allowClear={allowClear}
           defaultValue={valueText}
+          // value={ValueDate}
           onClick={showModal}
           placeholder="Mon retour"
-          // value={ValueDate}
         />
       </div>
       <Modal

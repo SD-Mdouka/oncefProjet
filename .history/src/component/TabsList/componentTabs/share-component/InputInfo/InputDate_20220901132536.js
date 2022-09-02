@@ -1,17 +1,27 @@
 import { Button, Modal, Input } from "antd";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Calendar } from "react-calendar";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import moment from "moment";
 import "./StyleInput.css";
 
-const InputDate = ({ valueText, allowClear }) => {
+const InputDate = ({ value, allowClear, placeHolder }) => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [SelectedDate, setSelectedDate] = useState(null);
-
+  const [valueText, setValueText] = useState(null);
   const date = new Date(SelectedDate);
-  const ValueDate =
-    date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+
+  const VT = () => {
+    if (value) {
+      setValueText(
+        date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()
+      );
+    } else {
+      setValueText(value);
+    }
+    return valueText;
+  };
 
   const showModal = () => {
     setVisible(true);
@@ -19,7 +29,6 @@ const InputDate = ({ valueText, allowClear }) => {
 
   const handleOk = () => {
     setConfirmLoading(true);
-    console.log(ValueDate + "-");
     setTimeout(() => {
       setVisible(false);
       setConfirmLoading(false);
@@ -40,10 +49,9 @@ const InputDate = ({ valueText, allowClear }) => {
           className="!text-[14px] !text-white !text-[] !bg-transparent "
           style={{ color: "#4a20aa !important", fontSize: "14px !important" }}
           allowClear={allowClear}
-          defaultValue={valueText}
+          value={VT}
           onClick={showModal}
           placeholder="Mon retour"
-          // value={ValueDate}
         />
       </div>
       <Modal
@@ -52,7 +60,7 @@ const InputDate = ({ valueText, allowClear }) => {
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
-        width={700}
+        width={500}
         footer={[
           <Button className="btnAnnule" key="back" onClick={handleCancel}>
             Annuler
@@ -69,9 +77,7 @@ const InputDate = ({ valueText, allowClear }) => {
       >
         <div className="flex flex-row ">
           <Calendar
-            onClickDay={(value) => {
-              setSelectedDate(value);
-            }}
+            onChange={(value) => setSelectedDate(value)}
             minDate={new Date()}
             defaultView="month"
             locale="fr"

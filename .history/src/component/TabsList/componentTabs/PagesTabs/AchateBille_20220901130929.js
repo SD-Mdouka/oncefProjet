@@ -8,10 +8,6 @@ import { BtnChange } from "../share-component/BtnChange";
 import DropdownVoyger from "../share-component/DropdownVoyger";
 import InputDate from "../share-component/InputInfo/InputDate";
 
-const date = new Date();
-const ValueDate =
-  date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
-
 const AchateBille = ({
   counterAdulte,
   setCounterAdulte,
@@ -44,11 +40,11 @@ const AchateBille = ({
       <div className="childAdresse flex-col space-x-1">
         <div className="textfield">
           <Label text={"Ma date de départ"} classes="labelfieild" />
-          <InputDate valueText={ValueDate} />
+          <InputDate value="15/08/2022" />
         </div>
         <div className="textfield mt-[54px]">
           <Label text={"Ma date de retour"} classes="labelfieild" />
-          <InputDate valueText="" allowClear />
+          <InputDate value="" placeHolder="Ma retour" allowClear />
         </div>
       </div>
       <div className="childAdresse flex-col space-x-1">

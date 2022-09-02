@@ -52,7 +52,7 @@ content: "";
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     background:#fff;
-     border-radius:100% 0 100%;
+     border-radius:100% 25%;
      }
      
     `}
